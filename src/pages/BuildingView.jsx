@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
-import {   Statistic } from 'antd'
+import {   ConfigProvider, Pagination, Statistic } from 'antd'
 import {   motion } from 'framer-motion'
 import CountUp from 'react-countup'
 import ChartEnrConTre from '../charts/ChartEnrConTre';
@@ -579,19 +579,21 @@ const BuildingView = () => {
                   < div className='bvbottomright'  >
 
                         <img src='holo-kuwaitzain.png' className='holosiemens'  /> 
-                        <img src='circleglow.png' className='circleglow'  /> 
-                        <div className='floorselect'>
-                              <div className='floorselectlabel'>Floor Select</div>
-                              <div className='floorbtn'>1F</div>
-                              <div className='floorbtn'>2F</div>
-                              <div className='floorbtn'>3F</div>
-                              <div className='floorbtn'>4F</div>
-                              <div className='floorbtn'>5F</div>
-                              <div className='floorbtn'>6F</div>
-                              <div className='floorbtn'>7F</div>
+                        {/* <img src='holo-kuwaitzain-floor.png' className='holosiemensfloor'  />  */}
 
- 
-                        </div>            
+                        <img src='circleglow.png' className='circleglow'  /> 
+                              <div className='floorselect'>
+                                  <div className='floorbtnactive' style={{width: 80}}>Building</div>
+                                  <div className='floorselectlabel'>Floor Select</div>
+                                  <div className='floorbtn'>1F</div>
+                                  <div className='floorbtn'>2F</div>
+                                  <div className='floorbtn'>3F</div>
+                                  <div className='floorbtn'>4F</div>
+                                  <div className='floorbtn'>5F</div>
+                                  <div className='floorbtn'>6F</div>
+                                  <div className='floorbtn'>7F</div>
+  
+                              </div>            
 
                   </div>
 
