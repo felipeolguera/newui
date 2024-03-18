@@ -577,6 +577,7 @@ const BuildingView = () => {
 
 
                   < div className='bvbottomright'  >
+
                         <img src='holo-kuwaitzain.png' className='holosiemens'  /> 
                         <img src='circleglow.png' className='circleglow'  /> 
                         <div className='floorselect'>
@@ -591,6 +592,7 @@ const BuildingView = () => {
 
  
                         </div>            
+
                   </div>
 
             </ motion.div>
