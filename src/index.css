@@ -5,6 +5,10 @@
    
 }
 
+@font-face {
+  font-family: 'Xolonium';
+  src: local('Xolonium'), url(Xolonium-Regular.woff) format('woff');
+  }
 
 * {
   box-sizing: border-box;

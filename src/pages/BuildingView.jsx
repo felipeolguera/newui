@@ -592,8 +592,7 @@ const BuildingView = () => {
                                   <div className='floorbtn'>5F</div>
                                   <div className='floorbtn'>6F</div>
                                   <div className='floorbtn'>7F</div>
-  
-                              </div>            
+                                </div>            
 
                   </div>
 
