@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
-import {   ConfigProvider, Pagination, Statistic } from 'antd'
+import {    Statistic } from 'antd'
 import {   motion } from 'framer-motion'
 import CountUp from 'react-countup'
 import ChartEnrConTre from '../charts/ChartEnrConTre';
@@ -9,7 +9,7 @@ import { DoubleLeftOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import Loader from '../Loader';
 import { Suspense } from 'react';
-   
+    
 
 const BuildingView = () => {
 
@@ -577,9 +577,14 @@ const BuildingView = () => {
 
 
                   < div className='bvbottomright'  >
+                  
+                            {/* <img src='holo-kuwaitzain-floor.png' className='holosiemensfloor'  />  */}
+                        
+                            
+                            <img src='holo-kuwaitzain.png' className='holosiemens'  /> 
+ 
+ 
 
-                        <img src='holo-kuwaitzain.png' className='holosiemens'  /> 
-                        {/* <img src='holo-kuwaitzain-floor.png' className='holosiemensfloor'  />  */}
 
                         <img src='circleglow.png' className='circleglow'  /> 
                               <div className='floorselect'>

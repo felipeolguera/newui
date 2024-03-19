@@ -553,7 +553,17 @@ z-index: 11;
    .holosiemens
    {
       z-index: 1;
-     width: 850px;
+     width: 739px;
+     position: relative;
+     top: 0;
+     left: -5%;
+     }
+
+     .carousel
+   {
+      z-index: 1;
+     width: 739px;
+     height: 480px;
      position: relative;
      top: 0;
      left: -5%;
