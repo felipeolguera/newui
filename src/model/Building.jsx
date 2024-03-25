@@ -10,7 +10,7 @@ import { motion } from "framer-motion-3d";
 import { AlertOutlined } from "@ant-design/icons";
 
 export function Building(props) {
-  const { nodes, materials } = useGLTF('/2503demo-building-solo-.glb')
+  const { nodes, materials } = useGLTF('/2503demo-building-floors-.glb')
 
   const navigate = useNavigate();
 
@@ -18,9 +18,19 @@ export function Building(props) {
     // Navigate to the desired route
      navigate('/building' )
   };
+
+
+
   return (
     <group {...props} dispose={null}>
-      <motion.group
+      {/* <group
+        name="building01"
+        position={[-70.94, 1.414, 116.986]}
+        rotation={[0, -1.571, 0]}
+        scale={35.081}> */}
+
+
+          <motion.group
         name="building01"
         position={[-70.94, 1.414, 116.986]}
         rotation={[0, -1.571, 0]}
@@ -28,6 +38,7 @@ export function Building(props) {
         onClick={handleCalloutClick}
         whileHover={{scale:39 }}
       >
+
         <mesh
           name="Plane020"
           castShadow
@@ -140,9 +151,167 @@ export function Building(props) {
           geometry={nodes.Plane020_15.geometry}
           material={materials.rood_sol}
         />
+
+        <group position={[-70.94, 1.414, 116.986]}
+        rotation={[0, -1.571, 0]}
+        scale={1}>
+                      <group
+                        name="floor_7"
+                        position={[-72.67, 13.182, 117.367]}
+                        rotation={[0, -1.571, 0]}
+                        scale={32.352}>
+                        <mesh
+                          name="Plane036"
+                          castShadow
+                          receiveShadow
+                          geometry={nodes.Plane036.geometry}
+                          material={materials['blue hologram']}
+                        />
+                        <mesh
+                          name="Plane036_1"
+                          castShadow
+                          receiveShadow
+                          geometry={nodes.Plane036_1.geometry}
+                          material={materials['Material.005']}
+                        />
+                      </group>
+                      <group
+                        name="floor_6"
+                        position={[-72.67, 13.182, 117.367]}
+                        rotation={[0, -1.571, 0]}
+                        scale={32.352}>
+                        <mesh
+                          name="Plane037"
+                          castShadow
+                          receiveShadow
+                          geometry={nodes.Plane037.geometry}
+                          material={materials['blue hologram']}
+                        />
+                        <mesh
+                          name="Plane037_1"
+                          castShadow
+                          receiveShadow
+                          geometry={nodes.Plane037_1.geometry}
+                          material={materials['Material.005']}
+                        />
+                      </group>
+                      <group
+                        name="floor_5"
+                        position={[-72.67, 13.182, 117.367]}
+                        rotation={[0, -1.571, 0]}
+                        scale={32.352}>
+                        <mesh
+                          name="Plane038"
+                          castShadow
+                          receiveShadow
+                          geometry={nodes.Plane038.geometry}
+                          material={materials['blue hologram']}
+                        />
+                        <mesh
+                          name="Plane038_1"
+                          castShadow
+                          receiveShadow
+                          geometry={nodes.Plane038_1.geometry}
+                          material={materials['Material.005']}
+                        />
+                      </group>
+                      <group
+                        name="floor_4"
+                        position={[-72.67, 13.182, 117.367]}
+                        rotation={[0, -1.571, 0]}
+                        scale={32.352}>
+                        <mesh
+                          name="Plane039"
+                          castShadow
+                          receiveShadow
+                          geometry={nodes.Plane039.geometry}
+                          material={materials['blue hologram']}
+                        />
+                        <mesh
+                          name="Plane039_1"
+                          castShadow
+                          receiveShadow
+                          geometry={nodes.Plane039_1.geometry}
+                          material={materials['Material.005']}
+                        />
+                      </group>
+                      <group
+                        name="floor_3"
+                        position={[-72.67, 13.182, 117.367]}
+                        rotation={[0, -1.571, 0]}
+                        scale={32.352}>
+                        <mesh
+                          name="Plane041"
+                          castShadow
+                          receiveShadow
+                          geometry={nodes.Plane041.geometry}
+                          material={materials['blue hologram']}
+                        />
+                        <mesh
+                          name="Plane041_1"
+                          castShadow
+                          receiveShadow
+                          geometry={nodes.Plane041_1.geometry}
+                          material={materials['Material.005']}
+                        />
+                      </group>
+                      <group
+                        name="floor_2"
+                        position={[-72.67, 13.182, 117.367]}
+                        rotation={[0, -1.571, 0]}
+                        scale={32.352}>
+                        <mesh
+                          name="Plane042"
+                          castShadow
+                          receiveShadow
+                          geometry={nodes.Plane042.geometry}
+                          material={materials['blue hologram']}
+                        />
+                        <mesh
+                          name="Plane042_1"
+                          castShadow
+                          receiveShadow
+                          geometry={nodes.Plane042_1.geometry}
+                          material={materials['Material.005']}
+                        />
+                      </group>
+                      <group
+                        name="floor_1"
+                        position={[-72.67, 13.182, 117.367]}
+                        rotation={[0, -1.571, 0]}
+                        scale={32.352}>
+                        <mesh
+                          name="Plane035"
+                          castShadow
+                          receiveShadow
+                          geometry={nodes.Plane035.geometry}
+                          material={materials['blue hologram']}
+                        />
+                        <mesh
+                          name="Plane035_1"
+                          castShadow
+                          receiveShadow
+                          geometry={nodes.Plane035_1.geometry}
+                          material={materials['Material.005']}
+                        />
+                      </group>
+
+                      <mesh
+                        name="red-area"
+                        castShadow
+                        receiveShadow
+                        geometry={nodes['red-area'].geometry}
+                        material={materials['Material.008']}
+                        position={[-77.093, 16.167, 104.673]}
+                        scale={[8.664, 5.103, 10.046]}
+                      />
+
+        </group>
       </motion.group>
+
     </group>
+    
   )
 }
 
-useGLTF.preload('/2503demo-building-solo-.glb')
+useGLTF.preload('/2503demo-building-floors-.glb')
