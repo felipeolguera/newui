@@ -9,15 +9,28 @@ import { motion } from "framer-motion-3d";
 import { AlertOutlined } from "@ant-design/icons";
 import { Building } from './Building'
 
-export default function Model(props) {
+export default function Model({ landx, landz, gesture, noHand }) {
   const { nodes, materials } = useGLTF('/2503demo-model-v5-transformed.glb')
   return (
-    <motion.group {...props} dispose={null} position={[0,-80,0]} 
-    initial={{scale:0}} 
-    animate={{scale:1}}
-    transition={{duration:2, delay:0.3, ease:"easeInOut"}}
-    exit= {{ scale:0, transition:{duration: 0.5, ease:"easeInOut", delay:0.3} }}
+    // <motion.group {...props} dispose={null} position={[0,-80,0]} 
+    // initial={{scale:0}} 
+    // animate={{scale:1}}
+    // transition={{duration:2, delay:0.3, ease:"easeInOut"}}
+    // exit= {{ scale:0, transition:{duration: 0.5, ease:"easeInOut", delay:0.3} }}
 
+    // >
+
+    <motion.group
+      dispose={null}
+      // scale={12}
+      position={[0,-80,0]}
+      initial={{ rotateX: 0, scale: 0 }}
+      animate={{
+        scale: Math.max(1, noHand ? 0.8 : -landz /5  ),
+        rotateY: -landx * 3,
+      }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      exit= {{ scale:0, transition:{duration: 0.5, ease:"easeInOut", delay:0.3} }}
     >
       <group name="Scene">
         <Building/>

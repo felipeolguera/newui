@@ -14,7 +14,7 @@ import DemoModel from "./DemoModel";
 import { useControls } from "leva";
 
   
-function Map() {
+function Map( { landx, landz, gesture, noHand }) {
   //debug
   // const { x } = useControls({
   //   x: { value: -264.6, min: -555, max: 555, step: 0.1 },
@@ -64,7 +64,7 @@ function Map() {
           fov={60}
         />
 
-        <Model />
+        <Model  landx={landx} landz={landz} gesture={gesture} noHand={noHand}/>
         {/* <DemoModel /> */}
  
         {/* <Siemen /> */}

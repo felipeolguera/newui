@@ -164,7 +164,7 @@ const BuildingView = () => {
                                   </svg>
                                 </div>
                                 <div><h6>6,880</h6></div>
-                                <div><h7>33%</h7></div>
+                                <div className="percent" style={{ left: "84px" }}><h6>33%</h6></div>
                                 <div className='arrowup'>
                                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
                                     <path d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z" fill="#41D3B9"/>
@@ -199,7 +199,7 @@ const BuildingView = () => {
                                   </svg>
                                 </div>
                                 <div><h6>215</h6></div>
-                                <div><h7>37%</h7></div>
+                                <div className="percent" style={{ left: "84px" }}><h6>37%</h6></div>
                                 <div className='arrowup'>
                                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
                                     <path d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z" fill="#41D3B9"/>
@@ -258,7 +258,7 @@ const BuildingView = () => {
                             </svg>
                           </div>
                           <div><h6>14,629</h6></div>
-                          <div><h7>40%</h7></div>
+                          <div className="percent" style={{ left: "84px" }}><h6>40%</h6></div>
                           <div className='arrowup'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
                               <path d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z" fill="#41D3B9"/>
@@ -293,7 +293,7 @@ const BuildingView = () => {
                               </svg>
                             </div>
                             <div><h6>456</h6></div>
-                            <div><h7>25%</h7></div>
+                            <div className="percent" style={{ left: "84px" }}><h6>25%</h6></div>
                             <div className='arrowup'>
                               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
                                 <path d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z" fill="#41D3B9"/>
@@ -350,7 +350,7 @@ const BuildingView = () => {
                                       </svg>
                                     </div>
                                     <div><h6> </h6></div>
-                                    <div><h7>5%</h7></div>
+                                    <div className="percent" style={{ left: "90px" }}><h6>5%</h6></div>
                                     <div className='arrowup'>
                                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
                                         <path d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z" fill="#41D3B9"/>
@@ -368,7 +368,7 @@ const BuildingView = () => {
                                       
                                     </div>
                                     <div><h6> </h6></div>
-                                    <div><h7>Diverted to landfill</h7></div>
+                                    <div><h6>Diverted to landfill</h6></div>
                                   </div>
 
                                 </div>
@@ -391,7 +391,7 @@ const BuildingView = () => {
                                     <div>
                                     </div>
                                     <div><h6> </h6></div>
-                                    <div><h7> </h7></div>
+                                    <div><h6> </h6></div>
                                   </div>
 
                                 </div>
@@ -402,8 +402,8 @@ const BuildingView = () => {
                                           <div>
                                           </div>
                                           <div style={{position:'relative', left:-20 }}><h6>Energy </h6></div>
-                                          <div>
-                                            <h7>836</h7>
+                                          <div className="percent" style={{ left: "90px" }}>
+                                            <h6>836</h6>
                                             </div>
                                           <div className='arrowup'>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
@@ -449,7 +449,7 @@ const BuildingView = () => {
                                           <div>
                                           </div>
                                           <div style={{position:'relative', left:-20 }}><h6>Water </h6></div>
-                                          <div><h7>126</h7></div>
+                                          <div className="percent" style={{ left: "90px" }}><h6>126</h6></div>
                                           <div className='arrowup'>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
                                               <path d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z" fill="#41D3B9"/>
@@ -492,7 +492,7 @@ const BuildingView = () => {
                                           <div>
                                           </div>
                                           <div style={{position:'relative', left:-20 }}><h6>Waste</h6></div>
-                                          <div><h7>126</h7></div>
+                                          <div className="percent" style={{ left: "90px" }}><h6>126</h6></div>
                                           <div className='arrowup'>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
                                               <path d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z" fill="#41D3B9"/>
