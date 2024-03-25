@@ -5,7 +5,7 @@ import {
   OrbitControls,
   PerspectiveCamera,
 } from "@react-three/drei";
-import Model from "./Model";
+import Model from "./model/Model";
  
 import Loader from "./Loader";
 import { Suspense } from "react";
@@ -64,8 +64,8 @@ function Map() {
           fov={60}
         />
 
-        {/* <Model /> */}
-        <DemoModel />
+        <Model />
+        {/* <DemoModel /> */}
  
         {/* <Siemen /> */}
 

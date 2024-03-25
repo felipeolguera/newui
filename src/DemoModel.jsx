@@ -39,7 +39,7 @@ export default function DemoModel(props) {
       >
 
         {/* ------ Alert ------ */}
-        <group 
+        {/* <group 
         position={[0, 4, 0]} 
         rotation={[0,-3.1,0]}        
 
@@ -67,7 +67,7 @@ export default function DemoModel(props) {
 
           </div>
         </Html>
-        </group>
+        </group> */}
         {/* ------ Alert ------ */}
 
 
