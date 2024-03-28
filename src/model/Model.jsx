@@ -16,11 +16,11 @@ export default function Model({ landx, landz, gesture, noHand }) {
     <motion.group
       dispose={null}
       // scale={12}
-      position={[0,-80,0]}
+      position={[0,-80,40]}
       initial={{ rotateX: 0, scale: 0 }}
       animate={{
-        scale: Math.max(1, noHand ? 0.8 : -landz /5  ),
-        rotateY: -landx * 3,
+        scale: Math.max(0.8, noHand ? 0.8 : -landz /7  ),
+        rotateY: -landx,
       }}
       transition={{ duration: 1, ease: "easeOut" }}
       exit= {{ scale:0, transition:{duration: 0.5, ease:"easeInOut", delay:0.3} }}

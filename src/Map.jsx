@@ -47,7 +47,7 @@ function Map( { landx, landz, gesture, noHand }) {
         maxZoom={811}
         // enablePan={true}
         autoRotate
-        autoRotateSpeed={0.3}
+        autoRotateSpeed={0.1}
       />
       <fog attach="fog" args={["black", 11, 1911]} />
       <Suspense fallback={<Loader />}>

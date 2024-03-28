@@ -48,7 +48,7 @@ export    function Building({gesture}) {
 
   const [victoryHandled, setVictoryHandled] = useState(false);
 
-  useFrame((state, delta) => {
+  useFrame(( ) => {
     // console.log(noHand);
 
     if (gesture === "Pointing_Up" && !victoryHandled) {
@@ -82,7 +82,7 @@ export    function Building({gesture}) {
     ref={group}   
     dispose={null} 
     onClick={handleCalloutClick}
-    whileHover={{scale:1.01 , originX:0}}
+    whileHover={{scale:0.85 , originX:0.5}}
     position={[20,12,-191]}
     scale={0.8}
     >

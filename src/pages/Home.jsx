@@ -208,8 +208,8 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    console.log(landx, landy, landz, gesture);
-  }, [landx, landy, landz]);
+    console.log(  landx,   landz, gesture);
+  }, [landx,   landz]);
 
 
   return (
