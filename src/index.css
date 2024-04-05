@@ -185,6 +185,7 @@ z-index: 11;
   position: relative;
   top: -880px;
   right: -350px;
+  opacity: 0.6;
 }
 
 .cardheaderbg
