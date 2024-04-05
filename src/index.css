@@ -84,6 +84,10 @@ canvas{
 z-index: 1;
 }
 
+
+
+
+
 .uicontainer
 {
 position: absolute;
@@ -172,6 +176,15 @@ z-index: 11;
   right: 26px;
   background: rgba(3, 35, 35, 0.418);
 
+}
+
+.ztlogo{
+  background-image: url(zt-logo.png);
+  width: 201px;
+  height: 32px;
+  position: relative;
+  top: -880px;
+  right: -350px;
 }
 
 .cardheaderbg

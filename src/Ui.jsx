@@ -1135,6 +1135,7 @@ const Ui = ({ enableCam, isGestureEnabled }) => {
 
       {/* -------------------------------------------------- CLEAN ENERGY GENERATION  --------------------------------------------------*/}
       <section>
+        
         <motion.div
           className="cleanenergy"
           initial={{ opacity: 0, x: 100 }}
@@ -1148,6 +1149,9 @@ const Ui = ({ enableCam, isGestureEnabled }) => {
           }}
           exit={{ opacity: 0, x: 100, transition: { duration: 1 } }}
         >
+
+<div className="ztlogo" /> 
+
           <motion.div
             className="enableEye"
             onClick={handleClick}
@@ -1178,11 +1182,21 @@ const Ui = ({ enableCam, isGestureEnabled }) => {
             />
           </motion.div>
 
+
+
+
+
+
+
+
+
+
           <motion.div
             className="sectioncard"
             style={{ position: "absolute", top: 12, right: 12, height: 127 }}
             variants={item}
           >
+
             <div className="cardheaderbgL">
               <h3>CLEAN ENERGY GENERATION</h3>
             </div>
