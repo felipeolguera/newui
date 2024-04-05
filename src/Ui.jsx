@@ -2,8 +2,7 @@
 /* eslint-disable react/no-unknown-property */
 import { EyeInvisibleOutlined, EyeOutlined } from "@ant-design/icons";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
-// import { useLocation } from 'react-router-dom';
+ // import { useLocation } from 'react-router-dom';
 
 // interface  {
 //   enableCam: () => void;

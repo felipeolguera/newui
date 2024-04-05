@@ -105,7 +105,7 @@ z-index: 11;
   max-height: 91vh;
   position: relative;
   left: 2vw;
-  top: 12vh;
+  top: 4vh;
   display: flex;
   justify-content: center;
   align-items: center !important;
@@ -183,7 +183,7 @@ z-index: 11;
   width: 201px;
   height: 32px;
   position: relative;
-  top: -880px;
+  top: -77vh;
   right: -350px;
   opacity: 0.6;
 }
