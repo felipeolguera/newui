@@ -664,6 +664,7 @@ z-index: 11;
    display: flex;
    align-items: center; 
    justify-content: center;
+   flex-direction: column;
     }
 
 
@@ -715,7 +716,7 @@ z-index: 11;
     box-shadow: 0px 4px 4px 0px rgba(18, 44, 43, 0.75);
     backdrop-filter: blur(16px);
     position: relative;
-    top: -14px;
+    top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -778,6 +779,38 @@ z-index: 11;
     border: 1px solid rgba(180, 202, 45, 0.00);
     background: rgba(64, 114, 117, 0.1);
   }
+
+
+  .bvbottomleftbtns
+  {
+    width: 796.046px;
+    height: 40px;
+     opacity: 0.85;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    top: 30px;
+gap: 20px;
+
+  }
+
+  .bvsusanabtn, .bvbldgmanbtn
+  {
+    width: 300px;
+    height: 40px;
+    flex-shrink: 0;
+    opacity: 0.85;
+    background: rgba(8, 86, 96, 0.9);
+     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
 
   .enrcharttrend
   {

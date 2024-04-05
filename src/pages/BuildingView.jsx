@@ -572,8 +572,50 @@ const BuildingView = () => {
                           <ChartEnrConTre />
                         </div>
 
+                        
+
                       </ div>
+
+                      <div className='bvbottomleftbtns' >
+                              <div className='bvsusanabtn' >SUSTAINABILITY ANALYSIS</div>
+                              <div className='bvbldgmanbtn'>BUILDING MANAGEMENT</div>
+                        </div> 
+
+                      
                   </ div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                   < div className='bvbottomright'  >
