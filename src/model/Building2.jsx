@@ -40,7 +40,10 @@ export   function Building2() {
 
 
   return (
-    <group       onClick={handleCalloutClick}
+    <motion.group       
+    onClick={handleCalloutClick}
+    whileHover={{scale:1.1 , originX:0.5}}
+
     >
       <group position={[-54.503, 47.812, -17.067]} rotation={[-Math.PI, 0, -Math.PI]} scale={[79.145, 39.515, 106.143]}>
         <mesh geometry={nodes.Cylinder019.geometry} material={materials['stripe.002']} />
@@ -69,7 +72,7 @@ export   function Building2() {
        
 
 
-    </group>
+    </motion.group>
   )
 }
 
