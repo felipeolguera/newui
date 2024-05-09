@@ -465,7 +465,7 @@ z-index: 11;
 
  .buildingview
  {
-  background-image: url(2024demo-bg.png);
+  /* background-image: url(2024demo-bg.png); */
   position: relative;
   top:0;
   left: 0;
@@ -473,6 +473,9 @@ z-index: 11;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
  }
 
  .buildingviewbg_img
@@ -485,7 +488,15 @@ z-index: 11;
   opacity: 0.15;
  }
 
-
+.bvbody{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 96vh;
+  /* top: 0; */
+ }
 
  .bvheader
  {
