@@ -397,7 +397,7 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
           <motion.div 
           className="sectioncard" 
           variants={item} 
-          style={{top:'440px', height:'100px'}}>
+          style={{top:'440px', height:'260px'}}>
 
             <div className="cardheaderbg">
               <h3>ENERGY CONSUMPTION TREND</h3>
@@ -405,7 +405,7 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
 
             <div className="cardbody">
 
-            <div className='bvchart' style={{  height:'200px', width: "100%", marginTop: "50px"}}>
+            <div className='bvchart' style={{  height:'210px', width: "100%", marginTop: "50px"}}>
  
             <ChartEnrConTre />
             </div>
