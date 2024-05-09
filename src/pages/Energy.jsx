@@ -7,11 +7,11 @@ import {
 
 
 import Map from '../Map'
-import Ui from '../Ui'
+import UiEnergy from '../UiEnergy'
 import Loader from '../Loader'
-import Energy from "../Ui";
+// import Energy from "../Ui";
 
-const Home = () => {
+const Energy = () => {
 
   let gestureRecognizer =  GestureRecognizer 
   let runningMode = "IMAGE";
@@ -221,7 +221,7 @@ const Home = () => {
         landz={landz}
         gesture={gesture}
         noHand={isGestureEnabled && noHand}/>
-    <Ui enableCam={enableCam} isGestureEnabled={isGestureEnabled.current} />
+    <UiEnergy enableCam={enableCam} isGestureEnabled={isGestureEnabled.current} />
     {/* <Energy enableCam={enableCam} isGestureEnabled={isGestureEnabled.current} /> */}
 
     </Suspense>
@@ -229,4 +229,4 @@ const Home = () => {
       )
 }
 
-export default Home
+export default Energy

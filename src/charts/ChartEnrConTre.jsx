@@ -111,7 +111,7 @@ export default function ChartEnrConTre(){
                 <CartesianGrid strokeDasharray="1 6" stroke="#82ca9d3a"  color= "#fff"  />
                 <XAxis dataKey="name" />
                 <YAxis />
-                <Legend align='center' width={540}  />
+                <Legend align='center' width='100%'  />
                 <Tooltip  content={<CustomTooltip />}/>
                 <Bar name="Savings" dataKey="Savings" fill="url(#colorUv)" activeBar={<Rectangle fill="url(#colorPv)"  />}/>
                 <Line   dataKey="Consumption" stroke="#ff7300" />

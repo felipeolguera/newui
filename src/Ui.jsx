@@ -2,6 +2,8 @@
 /* eslint-disable react/no-unknown-property */
 import { EyeInvisibleOutlined, EyeOutlined } from "@ant-design/icons";
 import { motion } from "framer-motion";
+import {   useNavigate } from "react-router-dom";
+
  // import { useLocation } from 'react-router-dom';
 
 // interface  {
@@ -51,6 +53,14 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
     enableCamo;
   };
 
+  const navigate = useNavigate();
+
+  const handleCalloutClick = () => {
+  
+     navigate('/energy' )
+
+  };
+
   return (
     <>
       <motion.div
@@ -96,7 +106,11 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
           </motion.div>
 
           {/* -------------------------------------------------- ENERGY CONSUMPTION --------------------------------------------------*/}
-          <motion.div className="sectioncard" variants={item}>
+          <motion.div 
+          className="sectioncard" 
+          variants={item}     
+          onClick={handleCalloutClick}>
+
             <div className="cardheaderbg">
               <h3>ENERGY CONSUMPTION</h3>
             </div>
