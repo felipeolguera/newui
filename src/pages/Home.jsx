@@ -9,6 +9,7 @@ import {
 import Map from '../Map'
 import Ui from '../Ui'
 import Loader from '../Loader'
+import Energy from "../Ui";
 
 const Home = () => {
 
@@ -220,7 +221,9 @@ const Home = () => {
         landz={landz}
         gesture={gesture}
         noHand={isGestureEnabled && noHand}/>
-    <Ui enableCam={enableCam} isGestureEnabled={isGestureEnabled.current} />
+    {/* <Ui enableCam={enableCam} isGestureEnabled={isGestureEnabled.current} /> */}
+    <Energy enableCam={enableCam} isGestureEnabled={isGestureEnabled.current} />
+
     </Suspense>
   </>
       )

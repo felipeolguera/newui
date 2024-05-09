@@ -101,7 +101,7 @@ z-index: 11;
 {
   width: 426px;
   height: 900px;
-  min-height: 80vh;
+  /* min-height: 80vh; */
   max-height: 91vh;
   position: relative;
   left: 2vw;

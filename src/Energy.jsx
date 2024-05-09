@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 //   enableCam: () => void;
 // }
 
-const Energy = ({ enableCam, isGestureEnabled }) => {
+const Ui = ({ enableCam, isGestureEnabled }) => {
   const handleClick = () => {
     enableCam();
   };
@@ -1252,4 +1252,4 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
   );
 };
 
-export default Energy;
+export default Ui;

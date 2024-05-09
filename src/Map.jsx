@@ -5,13 +5,14 @@ import {
   OrbitControls,
   PerspectiveCamera,
 } from "@react-three/drei";
-import Model from "./model/Model";
+import Model from "./model/ModelOmantel4";
  
 import Loader from "./Loader";
 import { Suspense } from "react";
 import DemoModel from "./DemoModel";
 // import Siemen from "./Siemen";
 import { useControls } from "leva";
+import { Bloom, EffectComposer, ToneMapping } from "@react-three/postprocessing";
 
   
 function Map( { landx, landz, gesture, noHand }) {
@@ -31,7 +32,7 @@ function Map( { landx, landz, gesture, noHand }) {
   return (
     <Canvas dpr={[1, 2]} shadows gl={{ toneMappingExposure: 0.4 }}>
       {/* <color   attach={"#000000"} /> */}
-      <ambientLight intensity={0.8} />
+      <ambientLight intensity={0.9} />
       <spotLight
         angle={1}
         position={[-80, 200, -100]}
@@ -43,7 +44,7 @@ function Map( { landx, landz, gesture, noHand }) {
         minPolarAngle={Math.PI / 4}
         maxPolarAngle={Math.PI / 2.2}
         minDistance={51}
-        maxDistance={500}
+        maxDistance={700}
         maxZoom={811}
         // enablePan={true}
         autoRotate
@@ -61,13 +62,18 @@ function Map( { landx, landz, gesture, noHand }) {
           ]}
           near={1}
           far={2600}
-          fov={60}
+          fov={25}
         />
 
         <Model  landx={landx} landz={landz} gesture={gesture} noHand={noHand}/>
         {/* <DemoModel /> */}
  
         {/* <Siemen /> */}
+        <EffectComposer disableNormalPass>
+            <Bloom luminanceThreshold={0.5}  mipmapBlur opacity={0.2} />
+            {/* <ToneMapping /> */}
+        </EffectComposer>
+
 
         <Environment
           preset="forest"
