@@ -620,7 +620,7 @@ z-index: 11;
   .bvbottomright
   {
    position: relative;
-   top: 0;
+   top: 11%;
    left: 820px;
    /* background-color: #41D3B909; */
    width: 739px;
@@ -634,10 +634,10 @@ z-index: 11;
    .holosiemens
    {
       z-index: 1;
-     width: 739px;
+     width: 637px;
      position: relative;
      top: 0;
-     left: -5%;
+     /* left: -5%; */
      }
 
      .carousel

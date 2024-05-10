@@ -623,7 +623,7 @@ const BuildingView = () => {
                                     {/* <img src='holo-kuwaitzain-floor.png' className='holosiemensfloor'  />  */}
                                 
                                     
-                                    <img src='holo-kuwaitzain.png' className='holosiemens'  /> 
+                                    <img src='holo-omantel.png' className='holosiemens'  /> 
         
         
 
