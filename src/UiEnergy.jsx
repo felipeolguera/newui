@@ -438,9 +438,11 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
             },
           }}
           exit={{ opacity: 0, x: 100, transition: { duration: 1 } }}
+          style={{ height: 284, width:721 , bottom: '5vh' }}
+
         >
 
-<div className="ztlogo" /> 
+          <div className="ztlogo" /> 
 
           <motion.div
             className="enableEye"
@@ -472,70 +474,45 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
             />
           </motion.div>
 
-
-
-
-
-
-
-
-
-
           <motion.div
             className="sectioncard"
-            style={{ position: "absolute", top: 12, right: 12, height: 127 }}
+            style={{ position: "relative", top: -20, right: 0, height: 270, width:721 , background:'rgba(3, 35, 35, 0)'}}
             variants={item}
           >
 
-            <div className="cardheaderbgL">
-              <h3>CLEAN ENERGY GENERATION</h3>
+            <div className="cardheaderbgL" style={{  backgroundImage: 'url(cardheaderbgL2.png)' , width: 680, right: 22 , top:4
+}}>
+              <h3>BUILDING EFFICIENCY</h3>
             </div>
 
             <div className="cardbody">
-              <div className="cardgroup">
-                <div
-                  className="cardtop"
-                  style={{
-                    width: 175,
-                    height: 66,
-                    position: "absolute",
-                    left: -155,
-                  }}
-                >
-                  <h3 style={{ position: "absolute", top: 2, fontSize: 20 }}>
-                    11,342
-                  </h3>
-                  <h6 style={{ position: "absolute", top: 1 }}>MWh</h6>
+
+              <div className="cardgroup_be">
+
+                <div className="cardthumb">
+                  <h3>76%</h3>
+                  <img src="thumb_omantel.png" width={'100%'} height={89} /> 
+                  <h3>Omantel HQ</h3>
                 </div>
+                <div className="cardthumb">
+                  <h3>76%</h3>
+                  <img src="thumb_omantel.png" width={'100%'} height={89} /> 
+                  <h3>Omantel HQ</h3>
+                </div>
+                <div className="cardthumb">
+                  <h3>76%</h3>
+                  <img src="thumb_omantel.png" width={'100%'} height={89} /> 
+                  <h3>Omantel HQ</h3>
+                </div>
+                <div className="cardthumb">
+                  <h3>76%</h3>
+                  <img src="thumb_omantel.png" width={'100%'} height={89} /> 
+                  <h3>Omantel HQ</h3>
+                </div>
+
               </div>
 
-              <div className="cardgroup">
-                <div
-                  className="cardtop"
-                  style={{
-                    width: 341,
-                    height: 66,
-                    position: "absolute",
-                    left: -165,
-                  }}
-                >
-                  <h3 style={{ position: "absolute", top: -2, fontSize: 23 }}>
-                    34%
-                  </h3>
-                  <h6
-                    style={{
-                      position: "absolute",
-                      top: -10,
-                      textAlign: "left",
-                      width: 230,
-                      fontSize: 17,
-                    }}
-                  >
-                    of the consumed electricity in the 14 connected buildings
-                  </h6>{" "}
-                </div>
-              </div>
-            </div>
+             </div>
           </motion.div>
         </motion.div>
       </section>

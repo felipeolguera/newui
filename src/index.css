@@ -230,7 +230,6 @@ z-index: 11;
   gap: 6px;
   position: relative;
   top: 60px;
-
 }
 
 .cardtop{
@@ -247,6 +246,40 @@ z-index: 11;
   backdrop-filter: blur(8px);
   position: relative;
 }
+
+.cardgroup_be{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  position: relative;
+  top: 64px;
+  left: 18px;
+}
+
+
+.cardthumb{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 160px; 
+  height: 180px;
+  background: rgba(8, 87, 96, 0.3);
+  }
+
+.cardthumb h3{
+    color: #FFF;
+    font-family: Xolonium;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    }
+
+
+
 
 .cardtop h3{
   color: #FFF;

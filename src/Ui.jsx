@@ -109,6 +109,7 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
           <motion.div 
           className="sectioncard" 
           variants={item}     
+          whileHover={{scale:1.05}}
           onClick={handleCalloutClick}>
 
             <div className="cardheaderbg">
@@ -371,6 +372,8 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
             className="sectioncard"
             style={{ position: "absolute", top: 320 }}
             variants={item}
+          whileHover={{scale:1.05}}
+
           >
             <div className="cardheaderbg">
               <h3>WATER CONSUMPTION</h3>
@@ -632,6 +635,8 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
             className="sectioncard"
             style={{ position: "absolute", top: 510, height: 127 }}
             variants={item}
+          whileHover={{scale:1.05}}
+
           >
             <div className="cardheaderbg">
               <h3>WASTE PRODUCTION</h3>
@@ -770,6 +775,8 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
             className="sectioncard"
             style={{ position: "absolute", top: 653, height: 190 }}
             variants={item}
+          whileHover={{scale:1.05}}
+
           >
             <div className="cardheaderbg">
               <h3>CARBON FOOTPRINT</h3>
