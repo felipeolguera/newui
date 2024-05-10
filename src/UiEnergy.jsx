@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
 import { EyeInvisibleOutlined, EyeOutlined } from "@ant-design/icons";
-import { motion, px } from "framer-motion";
+import { motion } from "framer-motion";
 import ChartEnrConTre from './charts/ChartEnrConTre';
 import { DoubleLeftOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
@@ -52,10 +52,7 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
 
   // const location = useLocation();
 
-  const startHandGesture = () => {
-    enableCamo;
-  };
-
+ 
   return (
     <>
       <motion.div

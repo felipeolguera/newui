@@ -1,4 +1,4 @@
- import React, { Suspense, useEffect, useRef, useState } from "react";
+ import   { Suspense, useEffect, useRef, useState } from "react";
 import {
   GestureRecognizer,
   FilesetResolver,
@@ -9,8 +9,7 @@ import {
 import Map from '../Map'
 import Ui from '../Ui'
 import Loader from '../Loader'
-import Energy from "../Ui";
-
+ 
 const Home = () => {
 
   let gestureRecognizer =  GestureRecognizer 
