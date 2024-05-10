@@ -208,9 +208,9 @@ const Energy = () => {
     createGestureRecognizer();
   }, []);
 
-  useEffect(() => {
-    console.log(  landx,   landz, gesture);
-  }, [landx,   landz]);
+  // useEffect(() => {
+  //   console.log(  landx,   landz, gesture);
+  // }, [landx,   landz]);
 
 
   return (

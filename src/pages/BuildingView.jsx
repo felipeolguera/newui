@@ -118,7 +118,7 @@ const BuildingView = () => {
                               SMART <br/> SUSTAINABILITY 
                         </div>
                       <div className='bvheaderbuilding'>
-                                ZAIN HQ <div className="bvheaderdivider"></div>
+                                OMANTEL HQ <div className="bvheaderdivider"></div>
                         </div>
 
                     </motion.div>

@@ -482,7 +482,7 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
 
             <div className="cardheaderbgL" style={{  backgroundImage: 'url(cardheaderbgL2.png)' , width: 680, right: 22 , top:4
 }}>
-              <h3>BUILDING EFFICIENCY</h3>
+              <h3 >BUILDING EFFICIENCY</h3>
             </div>
 
             <div className="cardbody">
@@ -490,24 +490,24 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
               <div className="cardgroup_be">
 
                 <div className="cardthumb">
-                  <h3>76%</h3>
+                  <h3 style={{paddingLeft:0}}>76%</h3>
                   <img src="thumb_omantel.png" width={'100%'} height={89} /> 
-                  <h3>Omantel HQ</h3>
+                  <h3 style={{paddingLeft:0}}>Omantel HQ</h3>
                 </div>
                 <div className="cardthumb">
-                  <h3>56%</h3>
+                  <h3 style={{paddingLeft:0}}>56%</h3>
                   <img src="thumb_kuwait.png" width={'100%'} height={89} /> 
-                  <h3>Zain Kuwait</h3>
+                  <h3 style={{paddingLeft:0}}>Zain Kuwait</h3>
                 </div>
                 <div className="cardthumb">
-                  <h3>33%</h3>
+                  <h3 style={{paddingLeft:0}}>33%</h3>
                   <img src="thumb_asima.png" width={'100%'} height={89} /> 
-                  <h3>Assima Mall</h3>
+                  <h3 style={{paddingLeft:0}}>Assima Mall</h3>
                 </div>
                 <div className="cardthumb">
-                  <h3>24%</h3>
+                  <h3 style={{paddingLeft:0}}>24%</h3>
                   <img src="thumb_gems.png" width={'100%'} height={89} /> 
-                  <h3>Gems School</h3>
+                  <h3 style={{paddingLeft:0}}>Gems School</h3>
                 </div>
 
               </div>
