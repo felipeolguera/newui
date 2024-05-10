@@ -495,19 +495,19 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
                   <h3>Omantel HQ</h3>
                 </div>
                 <div className="cardthumb">
-                  <h3>76%</h3>
-                  <img src="thumb_omantel.png" width={'100%'} height={89} /> 
-                  <h3>Omantel HQ</h3>
+                  <h3>56%</h3>
+                  <img src="thumb_kuwait.png" width={'100%'} height={89} /> 
+                  <h3>Zain Kuwait</h3>
                 </div>
                 <div className="cardthumb">
-                  <h3>76%</h3>
-                  <img src="thumb_omantel.png" width={'100%'} height={89} /> 
-                  <h3>Omantel HQ</h3>
+                  <h3>33%</h3>
+                  <img src="thumb_asima.png" width={'100%'} height={89} /> 
+                  <h3>Assima Mall</h3>
                 </div>
                 <div className="cardthumb">
-                  <h3>76%</h3>
-                  <img src="thumb_omantel.png" width={'100%'} height={89} /> 
-                  <h3>Omantel HQ</h3>
+                  <h3>24%</h3>
+                  <img src="thumb_gems.png" width={'100%'} height={89} /> 
+                  <h3>Gems School</h3>
                 </div>
 
               </div>
