@@ -293,7 +293,17 @@ z-index: 11;
   top: 0;
  }
  
-
+ .bvcardtop h3{
+  color: #FFF;
+  font-family: Xolonium;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  position: absolute;
+  top: 0;
+ }
 
 
 .cardtopanimated{
@@ -685,7 +695,7 @@ z-index: 11;
   {
     color: #FFF;
     font-family: "Inria";
-    font-size: 20px;
+    /* font-size: 20px; */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
