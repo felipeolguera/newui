@@ -130,9 +130,11 @@ const BuildingView = () => {
 
                       
 
-                            {/* <motion.div className='bvsectioncard'variants={item}   >
+                            <motion.div className='bvsectioncard'variants={item}   >
                                 <div className='bvcardheaderbg'><h3>ENERGY CONSUMPTION</h3></div>
-                                <div className='cardbody'>
+                                {/* <div className='cardbody' style={{top: 5}}>
+
+
                                     <div className='cardgroup'>
                                       <div className='cardtop'>
                                           
@@ -210,7 +212,235 @@ const BuildingView = () => {
                                       </div>
 
                                     </div>
+
+                                    
+                                </div> */}
+
+                              <div className="cardbody">
+                                <div className="cardtop">
+                                  <h3>44,670</h3>
+                                  <h6>MWh</h6> 
                                 </div>
+                                <div className="cardtop">
+                                  <h3>132</h3>
+                                  <h6>KWh/SQM</h6> 
+                                </div>
+                              </div> 
+
+                              <div className="cardbenchmark">Benchmark</div>
+
+                              <div className="cardbenchmarkbody">
+                                  <div className="cardbottom">
+                                              <div>
+                                                <svg
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  width="21"
+                                                  height="21"
+                                                  viewBox="0 0 21 21"
+                                                  fill="none"
+                                                >
+                                                  <g opacity="0.3" filter="url(#filter0_b_86_62)">
+                                                    <rect
+                                                      x="0.855469"
+                                                      y="0.0539551"
+                                                      width="20"
+                                                      height="20"
+                                                      fill="#086050"
+                                                      fill-opacity="0.9"
+                                                    />
+                                                  </g>
+                                                  <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M7.42871 14.0164V5.52905H6.42871V15.0164H15.916V14.0164H7.42871Z"
+                                                    fill="#8C9493"
+                                                  />
+                                                  <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M9.58441 11.4723V13.3684H8.58441V11.4723H9.58441Z"
+                                                    fill="#8C9493"
+                                                  />
+                                                  <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M12.8701 8.89648V13.3684H11.8701V8.89648H12.8701Z"
+                                                    fill="#8C9493"
+                                                  />
+                                                  <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M14.6191 7.43649V13.3684H13.6191V7.43649H14.6191Z"
+                                                    fill="#8C9493"
+                                                  />
+                                                  <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M11.1816 9.84871V13.3684H10.1816V9.84871H11.1816Z"
+                                                    fill="#8C9493"
+                                                  />
+                                                  <defs>
+                                                    <filter
+                                                      id="filter0_b_86_62"
+                                                      x="-15.1445"
+                                                      y="-15.946"
+                                                      width="52"
+                                                      height="52"
+                                                      filterUnits="userSpaceOnUse"
+                                                      color-interpolation-filters="sRGB"
+                                                    >
+                                                      <feFlood
+                                                        flood-opacity="0"
+                                                        result="BackgroundImageFix"
+                                                      />
+                                                      <feGaussianBlur
+                                                        in="BackgroundImageFix"
+                                                        stdDeviation="8"
+                                                      />
+                                                      <feComposite
+                                                        in2="SourceAlpha"
+                                                        operator="in"
+                                                        result="effect1_backgroundBlur_86_62"
+                                                      />
+                                                      <feBlend
+                                                        mode="normal"
+                                                        in="SourceGraphic"
+                                                        in2="effect1_backgroundBlur_86_62"
+                                                        result="shape"
+                                                      />
+                                                    </filter>
+                                                  </defs>
+                                                </svg>
+                                              </div>
+                                              <div>
+                                                <h6>66,844</h6>
+                                              </div>
+                                              <div className="percent">
+                                                <h6>33%</h6>
+                                              </div>
+                                              <div className="arrowup">
+                                                <svg
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  width="11"
+                                                  height="9"
+                                                  viewBox="0 0 11 9"
+                                                  fill="none"
+                                                >
+                                                  <path
+                                                    d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
+                                                    fill="#41D3B9"
+                                                  />
+                                                </svg>
+                                              </div>
+                                    </div>
+
+                                  <div className="cardbottom">
+                                            <div>
+                                              <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="21"
+                                                height="21"
+                                                viewBox="0 0 21 21"
+                                                fill="none"
+                                              >
+                                                <g opacity="0.3" filter="url(#filter0_b_86_62)">
+                                                  <rect
+                                                    x="0.855469"
+                                                    y="0.0539551"
+                                                    width="20"
+                                                    height="20"
+                                                    fill="#086050"
+                                                    fill-opacity="0.9"
+                                                  />
+                                                </g>
+                                                <path
+                                                  fill-rule="evenodd"
+                                                  clip-rule="evenodd"
+                                                  d="M7.42871 14.0164V5.52905H6.42871V15.0164H15.916V14.0164H7.42871Z"
+                                                  fill="#8C9493"
+                                                />
+                                                <path
+                                                  fill-rule="evenodd"
+                                                  clip-rule="evenodd"
+                                                  d="M9.58441 11.4723V13.3684H8.58441V11.4723H9.58441Z"
+                                                  fill="#8C9493"
+                                                />
+                                                <path
+                                                  fill-rule="evenodd"
+                                                  clip-rule="evenodd"
+                                                  d="M12.8701 8.89648V13.3684H11.8701V8.89648H12.8701Z"
+                                                  fill="#8C9493"
+                                                />
+                                                <path
+                                                  fill-rule="evenodd"
+                                                  clip-rule="evenodd"
+                                                  d="M14.6191 7.43649V13.3684H13.6191V7.43649H14.6191Z"
+                                                  fill="#8C9493"
+                                                />
+                                                <path
+                                                  fill-rule="evenodd"
+                                                  clip-rule="evenodd"
+                                                  d="M11.1816 9.84871V13.3684H10.1816V9.84871H11.1816Z"
+                                                  fill="#8C9493"
+                                                />
+                                                <defs>
+                                                  <filter
+                                                    id="filter0_b_86_62"
+                                                    x="-15.1445"
+                                                    y="-15.946"
+                                                    width="52"
+                                                    height="52"
+                                                    filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB"
+                                                  >
+                                                    <feFlood
+                                                      flood-opacity="0"
+                                                      result="BackgroundImageFix"
+                                                    />
+                                                    <feGaussianBlur
+                                                      in="BackgroundImageFix"
+                                                      stdDeviation="8"
+                                                    />
+                                                    <feComposite
+                                                      in2="SourceAlpha"
+                                                      operator="in"
+                                                      result="effect1_backgroundBlur_86_62"
+                                                    />
+                                                    <feBlend
+                                                      mode="normal"
+                                                      in="SourceGraphic"
+                                                      in2="effect1_backgroundBlur_86_62"
+                                                      result="shape"
+                                                    />
+                                                  </filter>
+                                                </defs>
+                                              </svg>
+                                            </div>
+                                            <div>
+                                              <h6>211</h6>
+                                            </div>
+                                            <div className="percent">
+                                              <h6>37%</h6>
+                                            </div>
+                                            <div className="arrowup">
+                                              <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="11"
+                                                height="9"
+                                                viewBox="0 0 11 9"
+                                                fill="none"
+                                              >
+                                                <path
+                                                  d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
+                                                  fill="#41D3B9"
+                                                />
+                                              </svg>
+                                            </div>
+                                    </div>
+
+                              </div>
+                           
+
 
                                 <div className='cardfooter'>
                                   <div className='cardicon'>
@@ -225,85 +455,235 @@ const BuildingView = () => {
                                 </div>
                               </motion.div>
 
-                            <motion.div className='bvsectioncard' variants={item}  >
+
+
+                            <motion.div className='bvsectioncard' variants={item} 
+                            style={{position: 'relative',left: 395}}>
+
+
                                 <div className='bvcardheaderbg'><h3>WATER CONSUMPTION</h3></div>
-                                <div className='cardbody'>
-                                <div className='cardgroup'>
-                                <div className='cardtop'>
-                                <Statistic   value={10966} formatter={formatter} 
-                                                valueStyle={animatedValue} 
-                                                />
-
-                                  
-                                  
-                                  <h6>M3</h6> </div>
-
-                                <div className='cardbottom'>  
-                                  <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-                                          <g opacity="0.3" filter="url(#filter0_b_86_62)">
-                                          <rect x="0.855469" y="0.0539551" width="20" height="20" fill="#086050" fill-opacity="0.9"/>
-                                          </g>
-                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.42871 14.0164V5.52905H6.42871V15.0164H15.916V14.0164H7.42871Z" fill="#8C9493"/>
-                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58441 11.4723V13.3684H8.58441V11.4723H9.58441Z" fill="#8C9493"/>
-                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8701 8.89648V13.3684H11.8701V8.89648H12.8701Z" fill="#8C9493"/>
-                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6191 7.43649V13.3684H13.6191V7.43649H14.6191Z" fill="#8C9493"/>
-                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1816 9.84871V13.3684H10.1816V9.84871H11.1816Z" fill="#8C9493"/>
-                                          <defs>
-                                          <filter id="filter0_b_86_62" x="-15.1445" y="-15.946" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                          <feGaussianBlur in="BackgroundImageFix" stdDeviation="8"/>
-                                          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_86_62"/>
-                                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_86_62" result="shape"/>
-                                          </filter>
-                                          </defs>
-                                    </svg>
-                                  </div>
-                                  <div><h6>14,629</h6></div>
-                                  <div className="percent" style={{ left: "84px" }}><h6>40%</h6></div>
-                                  <div className='arrowup'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
-                                      <path d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z" fill="#41D3B9"/>
-                                    </svg>
-                                  </div>
+                                <div className="cardbody">
+                                <div className="cardtop">
+                                  <h3>116,778</h3>
+                                  <h6>M3</h6> 
                                 </div>
-
+                                <div className="cardtop">
+                                  <h3>342</h3>
+                                  <h6>Liters/SQM</h6>{" "}
                                 </div>
+                                    </div> 
 
-                                <div className='cardgroup'>
-                                  <div className='cardtop'><h3>342</h3><h6>Liters/SQM</h6> </div>
+                                <div className="cardbenchmark">Benchmark</div>
 
-                                  <div className='cardbottom'>  
-                                    <div>
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-                                                <g opacity="0.3" filter="url(#filter0_b_86_62)">
-                                                  <rect x="0.855469" y="0.0539551" width="20" height="20" fill="#086050" fill-opacity="0.9"/>
-                                                </g>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.42871 14.0164V5.52905H6.42871V15.0164H15.916V14.0164H7.42871Z" fill="#8C9493"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58441 11.4723V13.3684H8.58441V11.4723H9.58441Z" fill="#8C9493"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8701 8.89648V13.3684H11.8701V8.89648H12.8701Z" fill="#8C9493"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6191 7.43649V13.3684H13.6191V7.43649H14.6191Z" fill="#8C9493"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1816 9.84871V13.3684H10.1816V9.84871H11.1816Z" fill="#8C9493"/>
-                                                <defs>
-                                                  <filter id="filter0_b_86_62" x="-15.1445" y="-15.946" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="8"/>
-                                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_86_62"/>
-                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_86_62" result="shape"/>
-                                                  </filter>
-                                                </defs>
-                                      </svg>
-                                    </div>
-                                    <div><h6>456</h6></div>
-                                    <div className="percent" style={{ left: "84px" }}><h6>25%</h6></div>
-                                    <div className='arrowup'>
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
-                                        <path d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z" fill="#41D3B9"/>
-                                      </svg>
-                                    </div>
-                                  </div>
+                                <div className="cardbenchmarkbody">
+                                    <div className="cardbottom">
+                                                <div>
+                                                  <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="21"
+                                                    height="21"
+                                                    viewBox="0 0 21 21"
+                                                    fill="none"
+                                                  >
+                                                    <g opacity="0.3" filter="url(#filter0_b_86_62)">
+                                                      <rect
+                                                        x="0.855469"
+                                                        y="0.0539551"
+                                                        width="20"
+                                                        height="20"
+                                                        fill="#086050"
+                                                        fill-opacity="0.9"
+                                                      />
+                                                    </g>
+                                                    <path
+                                                      fill-rule="evenodd"
+                                                      clip-rule="evenodd"
+                                                      d="M7.42871 14.0164V5.52905H6.42871V15.0164H15.916V14.0164H7.42871Z"
+                                                      fill="#8C9493"
+                                                    />
+                                                    <path
+                                                      fill-rule="evenodd"
+                                                      clip-rule="evenodd"
+                                                      d="M9.58441 11.4723V13.3684H8.58441V11.4723H9.58441Z"
+                                                      fill="#8C9493"
+                                                    />
+                                                    <path
+                                                      fill-rule="evenodd"
+                                                      clip-rule="evenodd"
+                                                      d="M12.8701 8.89648V13.3684H11.8701V8.89648H12.8701Z"
+                                                      fill="#8C9493"
+                                                    />
+                                                    <path
+                                                      fill-rule="evenodd"
+                                                      clip-rule="evenodd"
+                                                      d="M14.6191 7.43649V13.3684H13.6191V7.43649H14.6191Z"
+                                                      fill="#8C9493"
+                                                    />
+                                                    <path
+                                                      fill-rule="evenodd"
+                                                      clip-rule="evenodd"
+                                                      d="M11.1816 9.84871V13.3684H10.1816V9.84871H11.1816Z"
+                                                      fill="#8C9493"
+                                                    />
+                                                    <defs>
+                                                      <filter
+                                                        id="filter0_b_86_62"
+                                                        x="-15.1445"
+                                                        y="-15.946"
+                                                        width="52"
+                                                        height="52"
+                                                        filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB"
+                                                      >
+                                                        <feFlood
+                                                          flood-opacity="0"
+                                                          result="BackgroundImageFix"
+                                                        />
+                                                        <feGaussianBlur
+                                                          in="BackgroundImageFix"
+                                                          stdDeviation="8"
+                                                        />
+                                                        <feComposite
+                                                          in2="SourceAlpha"
+                                                          operator="in"
+                                                          result="effect1_backgroundBlur_86_62"
+                                                        />
+                                                        <feBlend
+                                                          mode="normal"
+                                                          in="SourceGraphic"
+                                                          in2="effect1_backgroundBlur_86_62"
+                                                          result="shape"
+                                                        />
+                                                      </filter>
+                                                    </defs>
+                                                  </svg>
+                                                </div>
+                                                <div>
+                                                  <h6>196,209</h6>
+                                                </div>
+                                                <div className="percent">
+                                                  <h6>40%</h6>
+                                                </div>
+                                                <div className="arrowup">
+                                                  <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="11"
+                                                    height="9"
+                                                    viewBox="0 0 11 9"
+                                                    fill="none"
+                                                  >
+                                                    <path
+                                                      d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
+                                                      fill="#41D3B9"
+                                                    />
+                                                  </svg>
+                                                </div>
+                                      </div>
 
-                                </div>
+                                    <div className="cardbottom">
+                                              <div>
+                                                <svg
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  width="21"
+                                                  height="21"
+                                                  viewBox="0 0 21 21"
+                                                  fill="none"
+                                                >
+                                                  <g opacity="0.3" filter="url(#filter0_b_86_62)">
+                                                    <rect
+                                                      x="0.855469"
+                                                      y="0.0539551"
+                                                      width="20"
+                                                      height="20"
+                                                      fill="#086050"
+                                                      fill-opacity="0.9"
+                                                    />
+                                                  </g>
+                                                  <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M7.42871 14.0164V5.52905H6.42871V15.0164H15.916V14.0164H7.42871Z"
+                                                    fill="#8C9493"
+                                                  />
+                                                  <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M9.58441 11.4723V13.3684H8.58441V11.4723H9.58441Z"
+                                                    fill="#8C9493"
+                                                  />
+                                                  <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M12.8701 8.89648V13.3684H11.8701V8.89648H12.8701Z"
+                                                    fill="#8C9493"
+                                                  />
+                                                  <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M14.6191 7.43649V13.3684H13.6191V7.43649H14.6191Z"
+                                                    fill="#8C9493"
+                                                  />
+                                                  <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M11.1816 9.84871V13.3684H10.1816V9.84871H11.1816Z"
+                                                    fill="#8C9493"
+                                                  />
+                                                  <defs>
+                                                    <filter
+                                                      id="filter0_b_86_62"
+                                                      x="-15.1445"
+                                                      y="-15.946"
+                                                      width="52"
+                                                      height="52"
+                                                      filterUnits="userSpaceOnUse"
+                                                      color-interpolation-filters="sRGB"
+                                                    >
+                                                      <feFlood
+                                                        flood-opacity="0"
+                                                        result="BackgroundImageFix"
+                                                      />
+                                                      <feGaussianBlur
+                                                        in="BackgroundImageFix"
+                                                        stdDeviation="8"
+                                                      />
+                                                      <feComposite
+                                                        in2="SourceAlpha"
+                                                        operator="in"
+                                                        result="effect1_backgroundBlur_86_62"
+                                                      />
+                                                      <feBlend
+                                                        mode="normal"
+                                                        in="SourceGraphic"
+                                                        in2="effect1_backgroundBlur_86_62"
+                                                        result="shape"
+                                                      />
+                                                    </filter>
+                                                  </defs>
+                                                </svg>
+                                              </div>
+                                              <div>
+                                                <h6>695</h6>
+                                              </div>
+                                              <div className="percent">
+                                                <h6>37%</h6>
+                                              </div>
+                                              <div className="arrowup">
+                                                <svg
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  width="11"
+                                                  height="9"
+                                                  viewBox="0 0 11 9"
+                                                  fill="none"
+                                                >
+                                                  <path
+                                                    d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
+                                                    fill="#41D3B9"
+                                                  />
+                                                </svg>
+                                              </div>
+                                      </div>
+
                                 </div>
 
                                 <div className='cardfooter'>
@@ -319,230 +699,431 @@ const BuildingView = () => {
                                 </div>
                             </motion.div>
 
-                            <motion.div className='bvsectioncard' variants={item}   >
+                            <motion.div className='bvsectioncard' variants={item} 
+                            style={{position: 'relative',left: 405}}>
+ 
                                     <div className='bvcardheaderbg'><h3>WASTE PRODUCTION</h3></div>
-                                      <div className='cardbody'>
-                                        <div className='cardgroup'>
-                                          <div className='cardtop'>
-                                            <Statistic   value={798} formatter={formatter} 
-                                              valueStyle={animatedValue} 
-                                              />
+                                    <div className="cardbody" >
+                                <div className="cardtop" style={{height: 60, display: 'flex'}}>
 
-                                            <h6>Tons</h6> 
-                                          </div>
+                                  <h3 style={{position: 'absolute', top: 6}}>803</h3>
 
-                                          <div className='cardbottom'>  
-                                            <div>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-                                                    <g opacity="0.3" filter="url(#filter0_b_86_62)">
-                                                      <rect x="0.855469" y="0.0539551" width="20" height="20" fill="#086050" fill-opacity="0.9"/>
-                                                    </g>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.42871 14.0164V5.52905H6.42871V15.0164H15.916V14.0164H7.42871Z" fill="#8C9493"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58441 11.4723V13.3684H8.58441V11.4723H9.58441Z" fill="#8C9493"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8701 8.89648V13.3684H11.8701V8.89648H12.8701Z" fill="#8C9493"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6191 7.43649V13.3684H13.6191V7.43649H14.6191Z" fill="#8C9493"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1816 9.84871V13.3684H10.1816V9.84871H11.1816Z" fill="#8C9493"/>
-                                                    <defs>
-                                                      <filter id="filter0_b_86_62" x="-15.1445" y="-15.946" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="8"/>
-                                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_86_62"/>
-                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_86_62" result="shape"/>
-                                                      </filter>
-                                                    </defs>
-                                              </svg>
-                                            </div>
-                                            <div><h6> </h6></div>
-                                            <div className="percent" style={{ left: "90px" }}><h6>5%</h6></div>
-                                            <div className='arrowup'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
-                                                <path d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z" fill="#41D3B9"/>
-                                              </svg>
-                                            </div>
-                                          </div>
+                                <div className="wasteh6" style={{color: '#fff'}}>
+                                         Tons 
+                                  </div>
 
-                                        </div>
+                                  <div className="wasteh6" style={{ top: 30, fontSize: "0.6rem"}}>
 
-                                        <div className='cardgroup'>
-                                          <div className='cardtop'><h3>3%</h3><h6> </h6> </div>
+                                         <div style={{
+                                          display: 'flex',
+                                          justifyContent: 'start',
+                                          position: 'absolute',
+                                          left: '6px',
+                                          top: '7px',
+                                          }}>
+                                          37%</div> 
 
-                                          <div className='cardbottom'>  
-                                            <div>
-                                              
-                                            </div>
-                                            <div><h6> </h6></div>
-                                            <div><h6>Diverted to landfill</h6></div>
-                                          </div>
+                                         <div className="arrowup" style={{right: 5, top:8}}>
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="11"
+                                            height="9"
+                                            viewBox="0 0 11 9"
+                                            fill="none"
+                                          >
+                                            <path
+                                              d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
+                                              fill="#41D3B9"
+                                            />
+                                          </svg>
+                                </div>
+                                  </div>
 
-                                      </div>
-                                    </div>
+
+                                </div>
+                                <div className="cardtop" style={{height: 60}}>
+                                  <h3 style={{position: 'absolute', top: 6}}>342</h3>
+                                  <h6 style={{position: 'absolute', top: -6}}>Liters/SQM</h6> 
+                                </div>
+                      </div> 
 
                               </motion.div>
 
-                              <motion.div className='bvsectioncard' variants={item}>
+                              <motion.div className='bvsectioncard' variants={item} 
+                              style={{position: 'relative',left: 415}}>
                                     <div className='bvcardheaderbg'><h3>CARBON FOOTPRINT</h3></div>
-                                    <div className='cardbody'>
-                                        <div className='cardgroup'>
-                                          <div className='cardtop'>
-                                            <Statistic value={1088} formatter={formatter} 
-                                              valueStyle={animatedValue} 
-                                              />
+                                    <div className="cardbody" style={{top: 5}}>
+              <div className="cardgroup">
+                <div className="cardtop" style={{height: 60,  background:  'rgba(8, 87, 96, 0.90)'}}>
+                  <h3 style={{position: 'absolute', top: 6, 
+                 
+}}>17,013</h3>
+                  <h6 style={{position: 'absolute', top: -6}}>Tons</h6> 
+                </div>
 
-                                            <h6>Tons</h6> </div>
+                <div className="cardbottom" style={{ height: 67, background:'rgba(8, 90, 96, 0.2)' }}>
+                  <div></div>
+                  <div>
+                    <h6> </h6>
+                  </div>
+                  <div> </div>
+                </div>
+              </div>
 
-                                          <div className='cardbottom' style={{height:82}}>  
-                                            <div>
-                                            </div>
-                                            <div><h6> </h6></div>
-                                            <div><h6> </h6></div>
-                                          </div>
+              <div className="cardgroup">
+                <div className="carbonbars">
+                  <div className="cardbottom" >
+                    <div></div>
+                    <div style={{ position: "relative", left: -20 }}>
+                      <h6>Energy </h6>
+                    </div>
+                    <div className="percent" style={{ left: "60px" }}>
+                      <h6>15,558</h6>
+                    </div>
+                    <div className="arrowup">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="9"
+                        viewBox="0 0 11 9"
+                        fill="none"
+                      >
+                        <path
+                          d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
+                          fill="#41D3B9"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="cardbar">
+                    <div style={{ position: "relative", left: 0 }}>
+                      <motion.div
+                        className="bar"
+                        style={{ position: "relative", top: 12, left: 14 }}
+                        initial={{ width: 0 }}
+                        animate={{ width: 130 }}
+                        transition={{
+                          delay: 2,
+                          duration: 1,
+                          ease: "easeOut",
+                        }}
+                      />
 
-                                        </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="176"
+                        height="13"
+                        viewBox="0 0 176 13"
+                        fill="none"
+                      >
+                        <g opacity="0.2" filter="url(#filter0_b_24_739)">
+                          <rect
+                            x="0.305664"
+                            y="0.343018"
+                            width="175.441"
+                            height="12"
+                            fill="#086050"
+                            fill-opacity="0.9"
+                          />
+                        </g>
+                        <path
+                          opacity="0.3"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M166.156 7.34302H13.4004V5.34302H166.156V7.34302Z"
+                          fill="#010101"
+                        />
 
-                                        <div className='cardgroup'>
-                                          <div className='carbonbars'>
-                                                <div className='cardbottom'>  
-                                                  <div>
-                                                  </div>
-                                                  <div style={{position:'relative', left:-20 }}><h6>Energy </h6></div>
-                                                  <div className="percent" style={{ left: "90px" }}>
-                                                    <h6>836</h6>
-                                                    </div>
-                                                  <div className='arrowup'>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
-                                                      <path d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z" fill="#41D3B9"/>
-                                                    </svg>
-                                                  </div>
-                                                </div>
-                                                <div className='cardbar'>  
-                                                  <div style={{position:'relative', left:0  }}> 
+                        <line
+                          opacity="0.5"
+                          x1="11.6963"
+                          y1="3.24341"
+                          x2="11.6963"
+                          y2="9.24341"
+                          stroke="white"
+                        />
+                        <line
+                          opacity="0.5"
+                          x1="167.737"
+                          y1="3.24341"
+                          x2="167.737"
+                          y2="9.24341"
+                          stroke="white"
+                        />
+                        <defs>
+                          <filter
+                            id="filter0_b_24_739"
+                            x="-15.6943"
+                            y="-15.657"
+                            width="207.441"
+                            height="44"
+                            filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB"
+                          >
+                            <feFlood
+                              flood-opacity="0"
+                              result="BackgroundImageFix"
+                            />
+                            <feGaussianBlur
+                              in="BackgroundImageFix"
+                              stdDeviation="8"
+                            />
+                            <feComposite
+                              in2="SourceAlpha"
+                              operator="in"
+                              result="effect1_backgroundBlur_24_739"
+                            />
+                            <feBlend
+                              mode="normal"
+                              in="SourceGraphic"
+                              in2="effect1_backgroundBlur_24_739"
+                              result="shape"
+                            />
+                          </filter>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
 
+                <div
+                  className="carbonbars"
+                  style={{ position: "relative", top: -2 }}
+                >
+                  <div className="cardbottom">
+                    <div></div>
+                    <div style={{ position: "relative", left: -20 }}>
+                      <h6>Water </h6>
+                    </div>
+                    <div className="percent" style={{ left: "70px" }}>
+                      <h6>1,232</h6>
+                    </div>
+                    <div className="arrowup">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="9"
+                        viewBox="0 0 11 9"
+                        fill="none"
+                      >
+                        <path
+                          d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
+                          fill="#41D3B9"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="cardbar">
+                    <div style={{ position: "relative", left: 0 }}>
+                      <motion.div
+                        className="bar"
+                        style={{ position: "relative", top: 12, left: 14 }}
+                        initial={{ width: 0 }}
+                        animate={{ width: 120 }}
+                        transition={{
+                          delay: 1.5,
+                          duration: 1,
+                          ease: "easeOut",
+                        }}
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="176"
+                        height="13"
+                        viewBox="0 0 176 13"
+                        fill="none"
+                      >
+                        <g opacity="0.2" filter="url(#filter0_b_24_739)">
+                          <rect
+                            x="0.305664"
+                            y="0.343018"
+                            width="175.441"
+                            height="12"
+                            fill="#086050"
+                            fill-opacity="0.9"
+                          />
+                        </g>
+                        <path
+                          opacity="0.3"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M166.156 7.34302H13.4004V5.34302H166.156V7.34302Z"
+                          fill="#010101"
+                        />
 
-                                                  <motion.div className='bar' 
-                                                  style={{position:'relative', top:12, left:14  }} 
-                                                  initial={{width:0}}
-                                                  animate={{width:130}}
-                                                  transition={{ delay:4, duration:2, ease:'easeOut' }}
-                                                  />
+                        <line
+                          opacity="0.5"
+                          x1="11.6963"
+                          y1="3.24341"
+                          x2="11.6963"
+                          y2="9.24341"
+                          stroke="white"
+                        />
+                        <line
+                          opacity="0.5"
+                          x1="167.737"
+                          y1="3.24341"
+                          x2="167.737"
+                          y2="9.24341"
+                          stroke="white"
+                        />
+                        <defs>
+                          <filter
+                            id="filter0_b_24_739"
+                            x="-15.6943"
+                            y="-15.657"
+                            width="207.441"
+                            height="44"
+                            filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB"
+                          >
+                            <feFlood
+                              flood-opacity="0"
+                              result="BackgroundImageFix"
+                            />
+                            <feGaussianBlur
+                              in="BackgroundImageFix"
+                              stdDeviation="8"
+                            />
+                            <feComposite
+                              in2="SourceAlpha"
+                              operator="in"
+                              result="effect1_backgroundBlur_24_739"
+                            />
+                            <feBlend
+                              mode="normal"
+                              in="SourceGraphic"
+                              in2="effect1_backgroundBlur_24_739"
+                              result="shape"
+                            />
+                          </filter>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
 
+                <div
+                  className="carbonbars"
+                  style={{ position: "relative", top: -4 }}
+                >
+                  <div className="cardbottom">
+                    <div></div>
+                    <div style={{ position: "relative", left: -20 }}>
+                      <h6>Waste</h6>
+                    </div>
+                    <div className="percent" style={{ left: "82px" }}>
+                      <h6>224</h6>
+                    </div>
+                    <div className="arrowup">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="9"
+                        viewBox="0 0 11 9"
+                        fill="none"
+                      >
+                        <path
+                          d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
+                          fill="#41D3B9"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="cardbar">
+                    <div style={{ position: "relative", left: 0 }}>
+                      <motion.div
+                        className="bar"
+                        style={{ position: "relative", top: 12, left: 14 }}
+                        initial={{ width: 0 }}
+                        animate={{ width: 100 }}
+                        transition={{
+                          delay: 1,
+                          duration: 1,
+                          ease: "easeOut",
+                        }}
+                      />
 
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="176" height="13" viewBox="0 0 176 13" fill="none">
-                                                          <g opacity="0.2" filter="url(#filter0_b_24_739)">
-                                                            <rect x="0.305664" y="0.343018" width="175.441" height="12" fill="#086050" fill-opacity="0.9"/>
-                                                          </g>
-                                                          <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M166.156 7.34302H13.4004V5.34302H166.156V7.34302Z" fill="#010101"/>
-                                                          
-                                                          <line opacity="0.5" x1="11.6963" y1="3.24341" x2="11.6963" y2="9.24341" stroke="white"/>
-                                                          <line opacity="0.5" x1="167.737" y1="3.24341" x2="167.737" y2="9.24341" stroke="white"/>
-                                                          <defs>
-                                                            <filter id="filter0_b_24_739" x="-15.6943" y="-15.657" width="207.441" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                              <feGaussianBlur in="BackgroundImageFix" stdDeviation="8"/>
-                                                              <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_24_739"/>
-                                                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_24_739" result="shape"/>
-                                                            </filter>
-                                                          </defs>
-                                                        </svg>
-                                                  </div>
-                                                </div>
-                                          </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="176"
+                        height="13"
+                        viewBox="0 0 176 13"
+                        fill="none"
+                      >
+                        <g opacity="0.2" filter="url(#filter0_b_24_739)">
+                          <rect
+                            x="0.305664"
+                            y="0.343018"
+                            width="175.441"
+                            height="12"
+                            fill="#086050"
+                            fill-opacity="0.9"
+                          />
+                        </g>
+                        <path
+                          opacity="0.3"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M166.156 7.34302H13.4004V5.34302H166.156V7.34302Z"
+                          fill="#010101"
+                        />
 
-                                          <div className='carbonbars' style={{position:'relative', top:-2 }} >
-                                                <div className='cardbottom'>  
-                                                  <div>
-                                                  </div>
-                                                  <div style={{position:'relative', left:-20 }}><h6>Water </h6></div>
-                                                  <div className="percent" style={{ left: "90px" }}><h6>126</h6></div>
-                                                  <div className='arrowup'>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
-                                                      <path d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z" fill="#41D3B9"/>
-                                                    </svg>
-                                                  </div>
-                                                </div>
-                                                <div className='cardbar'>  
-                                                  <div style={{position:'relative', left:0  }}> 
-
-                                                  <motion.div className='bar' 
-                                                  style={{position:'relative', top:12, left:14  }} 
-                                                  initial={{width:0}}
-                                                  animate={{width:120}}
-                                                  transition={{delay:4.3, duration:2, ease:'easeOut'}}
-                                                  
-                                                  />
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="176" height="13" viewBox="0 0 176 13" fill="none">
-                                                          <g opacity="0.2" filter="url(#filter0_b_24_739)">
-                                                            <rect x="0.305664" y="0.343018" width="175.441" height="12" fill="#086050" fill-opacity="0.9"/>
-                                                          </g>
-                                                          <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M166.156 7.34302H13.4004V5.34302H166.156V7.34302Z" fill="#010101"/>
-                                                          
-                                                          <line opacity="0.5" x1="11.6963" y1="3.24341" x2="11.6963" y2="9.24341" stroke="white"/>
-                                                          <line opacity="0.5" x1="167.737" y1="3.24341" x2="167.737" y2="9.24341" stroke="white"/>
-                                                          <defs>
-                                                            <filter id="filter0_b_24_739" x="-15.6943" y="-15.657" width="207.441" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                              <feGaussianBlur in="BackgroundImageFix" stdDeviation="8"/>
-                                                              <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_24_739"/>
-                                                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_24_739" result="shape"/>
-                                                            </filter>
-                                                          </defs>
-                                                        </svg>
-                                                  </div>
-                                                </div>
-                                          </div>
-
-                                          <div className='carbonbars' style={{position:'relative', top:-4 }} >
-                                                <div className='cardbottom'>  
-                                                  <div>
-                                                  </div>
-                                                  <div style={{position:'relative', left:-20 }}><h6>Waste</h6></div>
-                                                  <div className="percent" style={{ left: "90px" }}><h6>126</h6></div>
-                                                  <div className='arrowup'>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
-                                                      <path d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z" fill="#41D3B9"/>
-                                                    </svg>
-                                                  </div>
-                                                </div>
-                                                <div className='cardbar'>  
-                                                  <div style={{position:'relative', left:0  }}> 
-
-
-
-                                                  <motion.div className='bar' 
-                                                  style={{position:'relative', top:12, left:14,   }} 
-                                                  initial={{width:0}}
-                                                  animate={{width:100}}
-                                                  transition={{ delay:4.6, duration:2, ease:'easeOut'}}
-                                                  />
-
-
-
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="176" height="13" viewBox="0 0 176 13" fill="none">
-                                                          <g opacity="0.2" filter="url(#filter0_b_24_739)">
-                                                            <rect x="0.305664" y="0.343018" width="175.441" height="12" fill="#086050" fill-opacity="0.9"/>
-                                                          </g>
-                                                          <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M166.156 7.34302H13.4004V5.34302H166.156V7.34302Z" fill="#010101"/>
-                                                          <line opacity="0.5" x1="11.6963" y1="3.24341" x2="11.6963" y2="9.24341" stroke="white"/>
-                                                          <line opacity="0.5" x1="167.737" y1="3.24341" x2="167.737" y2="9.24341" stroke="white"/>
-                                                          <defs>
-                                                            <filter id="filter0_b_24_739" x="-15.6943" y="-15.657" width="207.441" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                              <feGaussianBlur in="BackgroundImageFix" stdDeviation="8"/>
-                                                              <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_24_739"/>
-                                                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_24_739" result="shape"/>
-                                                            </filter>
-                                                          </defs>
-                                                        </svg>
-                                                  </div>
-                                                </div>
-                                          </div>
-
-                                          
-
-
-                                        </div>
-                                    </div>
-
-                              </motion.div> */}
+                        <line
+                          opacity="0.5"
+                          x1="11.6963"
+                          y1="3.24341"
+                          x2="11.6963"
+                          y2="9.24341"
+                          stroke="white"
+                        />
+                        <line
+                          opacity="0.5"
+                          x1="167.737"
+                          y1="3.24341"
+                          x2="167.737"
+                          y2="9.24341"
+                          stroke="white"
+                        />
+                        <defs>
+                          <filter
+                            id="filter0_b_24_739"
+                            x="-15.6943"
+                            y="-15.657"
+                            width="207.441"
+                            height="44"
+                            filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB"
+                          >
+                            <feFlood
+                              flood-opacity="0"
+                              result="BackgroundImageFix"
+                            />
+                            <feGaussianBlur
+                              in="BackgroundImageFix"
+                              stdDeviation="8"
+                            />
+                            <feComposite
+                              in2="SourceAlpha"
+                              operator="in"
+                              result="effect1_backgroundBlur_24_739"
+                            />
+                            <feBlend
+                              mode="normal"
+                              in="SourceGraphic"
+                              in2="effect1_backgroundBlur_24_739"
+                              result="shape"
+                            />
+                          </filter>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+                              </motion.div>
 
 
 

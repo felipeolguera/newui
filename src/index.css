@@ -168,18 +168,13 @@ z-index: 11;
 }
 
 .sectioncard{
-  /* width: 370px;
-  height: 166px;
-  background: rgba(3, 35, 35, 0.418); */
   position: absolute;
   top: 126px;
-  /* right: 26px; */
-
   width: 385px;
   height: 207px;
   flex-shrink: 0;
-   background: rgba(5, 52, 57,0.6);
-   background-blend-mode: overlay;
+  background: rgba(5, 52, 57,0.6);
+  background-blend-mode: overlay;
   backdrop-filter: blur(8px);
   
 }
@@ -591,8 +586,8 @@ z-index: 11;
   justify-content: center;
   align-items: center;
   position: absolute;
-  height: 96vh;
-  /* top: 0; */
+  /* height: 96vh; */
+  top: 5px;
  }
 
  .bvheader
@@ -732,12 +727,22 @@ z-index: 11;
    
 
   .bvsectioncard{
-    width: 370px;
-    height: 166px;
+    /* width: 385px;
+    height: 208px; */
     /* position: absolute;
     top: 0; */
     /* background: rgba(3, 35, 29, 0.418); */
-    margin: 0 10px;
+    /* margin: 0 10px; */
+
+    position: absolute;
+    /* top: 126px; */
+    width: 385px;
+    height: 208px;
+    flex-shrink: 0;
+    background: rgba(5, 52, 57,0.6);
+    background-blend-mode: overlay;
+    backdrop-filter: blur(8px);
+  
 
   }
 
@@ -759,7 +764,7 @@ z-index: 11;
     height: 52px;
     background-image: url(cardheader.png);
     position: absolute;
-    top: 0;
+    margin: 8px;
   }
 
 
