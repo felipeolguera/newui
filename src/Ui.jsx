@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
 import { EyeInvisibleOutlined, EyeOutlined } from "@ant-design/icons";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import {   useNavigate } from "react-router-dom";
 
  // import { useLocation } from 'react-router-dom';
@@ -112,263 +112,535 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
           whileHover={{scale:1.05}}
           onClick={handleCalloutClick}>
 
-            <div className="cardheaderbg">
-              <h3>ENERGY CONSUMPTION</h3>
-            </div>
-            <div className="cardbody">
-              <div className="cardgroup">
-                <div className="cardtop">
-                  <h3>44,670</h3>
-                  <h6>MWh</h6>{" "}
-                </div>
+                  <div className="cardheaderbg">
+                    <h3>ENERGY CONSUMPTION</h3>
+                  </div>
 
-                <div className="cardbottom">
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="21"
-                      height="21"
-                      viewBox="0 0 21 21"
-                      fill="none"
-                    >
-                      <g opacity="0.3" filter="url(#filter0_b_86_62)">
-                        <rect
-                          x="0.855469"
-                          y="0.0539551"
-                          width="20"
-                          height="20"
-                          fill="#086050"
-                          fill-opacity="0.9"
+                    <div className="cardbody">
+                                <div className="cardtop">
+                                  <h3>44,670</h3>
+                                  <h6>MWh</h6> 
+                                </div>
+                                <div className="cardtop">
+                                  <h3>132</h3>
+                                  <h6>KWh/SQM</h6>{" "}
+                                </div>
+                      </div> 
+
+                  <div className="cardbenchmark">Benchmark</div>
+
+                  <div className="cardbenchmarkbody">
+                      <div className="cardbottom">
+                                  <div>
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="21"
+                                      height="21"
+                                      viewBox="0 0 21 21"
+                                      fill="none"
+                                    >
+                                      <g opacity="0.3" filter="url(#filter0_b_86_62)">
+                                        <rect
+                                          x="0.855469"
+                                          y="0.0539551"
+                                          width="20"
+                                          height="20"
+                                          fill="#086050"
+                                          fill-opacity="0.9"
+                                        />
+                                      </g>
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M7.42871 14.0164V5.52905H6.42871V15.0164H15.916V14.0164H7.42871Z"
+                                        fill="#8C9493"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M9.58441 11.4723V13.3684H8.58441V11.4723H9.58441Z"
+                                        fill="#8C9493"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M12.8701 8.89648V13.3684H11.8701V8.89648H12.8701Z"
+                                        fill="#8C9493"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M14.6191 7.43649V13.3684H13.6191V7.43649H14.6191Z"
+                                        fill="#8C9493"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M11.1816 9.84871V13.3684H10.1816V9.84871H11.1816Z"
+                                        fill="#8C9493"
+                                      />
+                                      <defs>
+                                        <filter
+                                          id="filter0_b_86_62"
+                                          x="-15.1445"
+                                          y="-15.946"
+                                          width="52"
+                                          height="52"
+                                          filterUnits="userSpaceOnUse"
+                                          color-interpolation-filters="sRGB"
+                                        >
+                                          <feFlood
+                                            flood-opacity="0"
+                                            result="BackgroundImageFix"
+                                          />
+                                          <feGaussianBlur
+                                            in="BackgroundImageFix"
+                                            stdDeviation="8"
+                                          />
+                                          <feComposite
+                                            in2="SourceAlpha"
+                                            operator="in"
+                                            result="effect1_backgroundBlur_86_62"
+                                          />
+                                          <feBlend
+                                            mode="normal"
+                                            in="SourceGraphic"
+                                            in2="effect1_backgroundBlur_86_62"
+                                            result="shape"
+                                          />
+                                        </filter>
+                                      </defs>
+                                    </svg>
+                                  </div>
+                                  <div>
+                                    <h6>66,844</h6>
+                                  </div>
+                                  <div className="percent">
+                                    <h6>33%</h6>
+                                  </div>
+                                  <div className="arrowup">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="11"
+                                      height="9"
+                                      viewBox="0 0 11 9"
+                                      fill="none"
+                                    >
+                                      <path
+                                        d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
+                                        fill="#41D3B9"
+                                      />
+                                    </svg>
+                                  </div>
+                        </div>
+
+                      <div className="cardbottom">
+                                <div>
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="21"
+                                    height="21"
+                                    viewBox="0 0 21 21"
+                                    fill="none"
+                                  >
+                                    <g opacity="0.3" filter="url(#filter0_b_86_62)">
+                                      <rect
+                                        x="0.855469"
+                                        y="0.0539551"
+                                        width="20"
+                                        height="20"
+                                        fill="#086050"
+                                        fill-opacity="0.9"
+                                      />
+                                    </g>
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M7.42871 14.0164V5.52905H6.42871V15.0164H15.916V14.0164H7.42871Z"
+                                      fill="#8C9493"
+                                    />
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M9.58441 11.4723V13.3684H8.58441V11.4723H9.58441Z"
+                                      fill="#8C9493"
+                                    />
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M12.8701 8.89648V13.3684H11.8701V8.89648H12.8701Z"
+                                      fill="#8C9493"
+                                    />
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M14.6191 7.43649V13.3684H13.6191V7.43649H14.6191Z"
+                                      fill="#8C9493"
+                                    />
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M11.1816 9.84871V13.3684H10.1816V9.84871H11.1816Z"
+                                      fill="#8C9493"
+                                    />
+                                    <defs>
+                                      <filter
+                                        id="filter0_b_86_62"
+                                        x="-15.1445"
+                                        y="-15.946"
+                                        width="52"
+                                        height="52"
+                                        filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB"
+                                      >
+                                        <feFlood
+                                          flood-opacity="0"
+                                          result="BackgroundImageFix"
+                                        />
+                                        <feGaussianBlur
+                                          in="BackgroundImageFix"
+                                          stdDeviation="8"
+                                        />
+                                        <feComposite
+                                          in2="SourceAlpha"
+                                          operator="in"
+                                          result="effect1_backgroundBlur_86_62"
+                                        />
+                                        <feBlend
+                                          mode="normal"
+                                          in="SourceGraphic"
+                                          in2="effect1_backgroundBlur_86_62"
+                                          result="shape"
+                                        />
+                                      </filter>
+                                    </defs>
+                                  </svg>
+                                </div>
+                                <div>
+                                  <h6>211</h6>
+                                </div>
+                                <div className="percent">
+                                  <h6>37%</h6>
+                                </div>
+                                <div className="arrowup">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11"
+                                    height="9"
+                                    viewBox="0 0 11 9"
+                                    fill="none"
+                                  >
+                                    <path
+                                      d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
+                                      fill="#41D3B9"
+                                    />
+                                  </svg>
+                                </div>
+                        </div>
+
+                  </div>
+                           
+
+                  <div className="cardfooter">
+                    <div className="cardicon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="19"
+                        height="23"
+                        viewBox="0 0 19 23"
+                        fill="none"
+                      >
+                        <path
+                          d="M6.93279 1.54695C7.32331 1.15642 7.95648 1.15643 8.347 1.54695L13.7646 6.96453C14.1551 7.35505 14.1551 7.98821 13.7646 8.37874L8.347 13.7963C7.95647 14.1868 7.32331 14.1868 6.93279 13.7963L1.51521 8.37874C1.12469 7.98821 1.12469 7.35505 1.51521 6.96452L6.93279 1.54695Z"
+                          fill="white"
                         />
-                      </g>
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M7.42871 14.0164V5.52905H6.42871V15.0164H15.916V14.0164H7.42871Z"
-                        fill="#8C9493"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M9.58441 11.4723V13.3684H8.58441V11.4723H9.58441Z"
-                        fill="#8C9493"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M12.8701 8.89648V13.3684H11.8701V8.89648H12.8701Z"
-                        fill="#8C9493"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M14.6191 7.43649V13.3684H13.6191V7.43649H14.6191Z"
-                        fill="#8C9493"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M11.1816 9.84871V13.3684H10.1816V9.84871H11.1816Z"
-                        fill="#8C9493"
-                      />
-                      <defs>
-                        <filter
-                          id="filter0_b_86_62"
-                          x="-15.1445"
-                          y="-15.946"
-                          width="52"
-                          height="52"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB"
-                        >
-                          <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix"
-                          />
-                          <feGaussianBlur
-                            in="BackgroundImageFix"
-                            stdDeviation="8"
-                          />
-                          <feComposite
-                            in2="SourceAlpha"
-                            operator="in"
-                            result="effect1_backgroundBlur_86_62"
-                          />
-                          <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_backgroundBlur_86_62"
-                            result="shape"
-                          />
-                        </filter>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div>
-                    <h6>66,844</h6>
-                  </div>
-                  <div className="percent">
-                    <h6>33%</h6>
-                  </div>
-                  <div className="arrowup">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="9"
-                      viewBox="0 0 11 9"
-                      fill="none"
-                    >
-                      <path
-                        d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
-                        fill="#41D3B9"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-
-              <div className="cardgroup">
-                <div className="cardtop">
-                  <h3>132</h3>
-                  <h6>KWh/SQM</h6>{" "}
-                </div>
-
-                <div className="cardbottom">
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="21"
-                      height="21"
-                      viewBox="0 0 21 21"
-                      fill="none"
-                    >
-                      <g opacity="0.3" filter="url(#filter0_b_86_62)">
-                        <rect
-                          x="0.855469"
-                          y="0.0539551"
-                          width="20"
-                          height="20"
-                          fill="#086050"
-                          fill-opacity="0.9"
+                        <path
+                          d="M12.4623 13.6627C12.8529 13.2721 13.486 13.2721 13.8765 13.6627L17.3739 17.1601C17.7645 17.5506 17.7645 18.1838 17.3739 18.5743L13.8765 22.0717C13.486 22.4622 12.8529 22.4622 12.4623 22.0717L8.96492 18.5743C8.5744 18.1838 8.57439 17.5506 8.96492 17.1601L12.4623 13.6627Z"
+                          fill="white"
                         />
-                      </g>
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M7.42871 14.0164V5.52905H6.42871V15.0164H15.916V14.0164H7.42871Z"
-                        fill="#8C9493"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M9.58441 11.4723V13.3684H8.58441V11.4723H9.58441Z"
-                        fill="#8C9493"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M12.8701 8.89648V13.3684H11.8701V8.89648H12.8701Z"
-                        fill="#8C9493"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M14.6191 7.43649V13.3684H13.6191V7.43649H14.6191Z"
-                        fill="#8C9493"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M11.1816 9.84871V13.3684H10.1816V9.84871H11.1816Z"
-                        fill="#8C9493"
-                      />
-                      <defs>
-                        <filter
-                          id="filter0_b_86_62"
-                          x="-15.1445"
-                          y="-15.946"
-                          width="52"
-                          height="52"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB"
-                        >
-                          <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix"
-                          />
-                          <feGaussianBlur
-                            in="BackgroundImageFix"
-                            stdDeviation="8"
-                          />
-                          <feComposite
-                            in2="SourceAlpha"
-                            operator="in"
-                            result="effect1_backgroundBlur_86_62"
-                          />
-                          <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_backgroundBlur_86_62"
-                            result="shape"
-                          />
-                        </filter>
-                      </defs>
-                    </svg>
+                      </svg>
+                    </div>
+                    <div className="cardfootertext">
+                      <p>
+                        " 34% Energy savings, equivalent to removing 1,637 cars from
+                        the road. "
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h6>211</h6>
-                  </div>
-                  <div className="percent">
-                    <h6>37%</h6>
-                  </div>
-                  <div className="arrowup">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="9"
-                      viewBox="0 0 11 9"
-                      fill="none"
-                    >
-                      <path
-                        d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
-                        fill="#41D3B9"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div className="cardfooter">
-              <div className="cardicon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="19"
-                  height="23"
-                  viewBox="0 0 19 23"
-                  fill="none"
-                >
-                  <path
-                    d="M6.93279 1.54695C7.32331 1.15642 7.95648 1.15643 8.347 1.54695L13.7646 6.96453C14.1551 7.35505 14.1551 7.98821 13.7646 8.37874L8.347 13.7963C7.95647 14.1868 7.32331 14.1868 6.93279 13.7963L1.51521 8.37874C1.12469 7.98821 1.12469 7.35505 1.51521 6.96452L6.93279 1.54695Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M12.4623 13.6627C12.8529 13.2721 13.486 13.2721 13.8765 13.6627L17.3739 17.1601C17.7645 17.5506 17.7645 18.1838 17.3739 18.5743L13.8765 22.0717C13.486 22.4622 12.8529 22.4622 12.4623 22.0717L8.96492 18.5743C8.5744 18.1838 8.57439 17.5506 8.96492 17.1601L12.4623 13.6627Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <div className="cardfootertext">
-                <p>
-                  " 34% Energy savings, equivalent to removing 1,637 cars from
-                  the road. "
-                </p>
-              </div>
-            </div>
+
           </motion.div>
           {/* -------------------------------------------------- WATER CONSUMPTION --------------------------------------------------*/}
 
-          <motion.div
+          <motion.div 
+          className="sectioncard" 
+          variants={item}     
+          whileHover={{scale:1.05}}
+          style={{   top: 343 }}
+
+          onClick={handleCalloutClick}>
+
+                  <div className="cardheaderbg">
+                    <h3>WATER CONSUMPTION</h3>
+                  </div>
+
+                    <div className="cardbody">
+                                <div className="cardtop">
+                                  <h3>116,778</h3>
+                                  <h6>M3</h6> 
+                                </div>
+                                <div className="cardtop">
+                                  <h3>342</h3>
+                                  <h6>Liters/SQM</h6>{" "}
+                                </div>
+                      </div> 
+
+                  <div className="cardbenchmark">Benchmark</div>
+
+                  <div className="cardbenchmarkbody">
+                      <div className="cardbottom">
+                                  <div>
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="21"
+                                      height="21"
+                                      viewBox="0 0 21 21"
+                                      fill="none"
+                                    >
+                                      <g opacity="0.3" filter="url(#filter0_b_86_62)">
+                                        <rect
+                                          x="0.855469"
+                                          y="0.0539551"
+                                          width="20"
+                                          height="20"
+                                          fill="#086050"
+                                          fill-opacity="0.9"
+                                        />
+                                      </g>
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M7.42871 14.0164V5.52905H6.42871V15.0164H15.916V14.0164H7.42871Z"
+                                        fill="#8C9493"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M9.58441 11.4723V13.3684H8.58441V11.4723H9.58441Z"
+                                        fill="#8C9493"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M12.8701 8.89648V13.3684H11.8701V8.89648H12.8701Z"
+                                        fill="#8C9493"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M14.6191 7.43649V13.3684H13.6191V7.43649H14.6191Z"
+                                        fill="#8C9493"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M11.1816 9.84871V13.3684H10.1816V9.84871H11.1816Z"
+                                        fill="#8C9493"
+                                      />
+                                      <defs>
+                                        <filter
+                                          id="filter0_b_86_62"
+                                          x="-15.1445"
+                                          y="-15.946"
+                                          width="52"
+                                          height="52"
+                                          filterUnits="userSpaceOnUse"
+                                          color-interpolation-filters="sRGB"
+                                        >
+                                          <feFlood
+                                            flood-opacity="0"
+                                            result="BackgroundImageFix"
+                                          />
+                                          <feGaussianBlur
+                                            in="BackgroundImageFix"
+                                            stdDeviation="8"
+                                          />
+                                          <feComposite
+                                            in2="SourceAlpha"
+                                            operator="in"
+                                            result="effect1_backgroundBlur_86_62"
+                                          />
+                                          <feBlend
+                                            mode="normal"
+                                            in="SourceGraphic"
+                                            in2="effect1_backgroundBlur_86_62"
+                                            result="shape"
+                                          />
+                                        </filter>
+                                      </defs>
+                                    </svg>
+                                  </div>
+                                  <div>
+                                    <h6>196,209</h6>
+                                  </div>
+                                  <div className="percent">
+                                    <h6>40%</h6>
+                                  </div>
+                                  <div className="arrowup">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="11"
+                                      height="9"
+                                      viewBox="0 0 11 9"
+                                      fill="none"
+                                    >
+                                      <path
+                                        d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
+                                        fill="#41D3B9"
+                                      />
+                                    </svg>
+                                  </div>
+                        </div>
+
+                      <div className="cardbottom">
+                                <div>
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="21"
+                                    height="21"
+                                    viewBox="0 0 21 21"
+                                    fill="none"
+                                  >
+                                    <g opacity="0.3" filter="url(#filter0_b_86_62)">
+                                      <rect
+                                        x="0.855469"
+                                        y="0.0539551"
+                                        width="20"
+                                        height="20"
+                                        fill="#086050"
+                                        fill-opacity="0.9"
+                                      />
+                                    </g>
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M7.42871 14.0164V5.52905H6.42871V15.0164H15.916V14.0164H7.42871Z"
+                                      fill="#8C9493"
+                                    />
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M9.58441 11.4723V13.3684H8.58441V11.4723H9.58441Z"
+                                      fill="#8C9493"
+                                    />
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M12.8701 8.89648V13.3684H11.8701V8.89648H12.8701Z"
+                                      fill="#8C9493"
+                                    />
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M14.6191 7.43649V13.3684H13.6191V7.43649H14.6191Z"
+                                      fill="#8C9493"
+                                    />
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M11.1816 9.84871V13.3684H10.1816V9.84871H11.1816Z"
+                                      fill="#8C9493"
+                                    />
+                                    <defs>
+                                      <filter
+                                        id="filter0_b_86_62"
+                                        x="-15.1445"
+                                        y="-15.946"
+                                        width="52"
+                                        height="52"
+                                        filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB"
+                                      >
+                                        <feFlood
+                                          flood-opacity="0"
+                                          result="BackgroundImageFix"
+                                        />
+                                        <feGaussianBlur
+                                          in="BackgroundImageFix"
+                                          stdDeviation="8"
+                                        />
+                                        <feComposite
+                                          in2="SourceAlpha"
+                                          operator="in"
+                                          result="effect1_backgroundBlur_86_62"
+                                        />
+                                        <feBlend
+                                          mode="normal"
+                                          in="SourceGraphic"
+                                          in2="effect1_backgroundBlur_86_62"
+                                          result="shape"
+                                        />
+                                      </filter>
+                                    </defs>
+                                  </svg>
+                                </div>
+                                <div>
+                                  <h6>695</h6>
+                                </div>
+                                <div className="percent">
+                                  <h6>37%</h6>
+                                </div>
+                                <div className="arrowup">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11"
+                                    height="9"
+                                    viewBox="0 0 11 9"
+                                    fill="none"
+                                  >
+                                    <path
+                                      d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
+                                      fill="#41D3B9"
+                                    />
+                                  </svg>
+                                </div>
+                        </div>
+
+                  </div>
+                           
+
+                  <div className="cardfooter">
+                    <div className="cardicon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="19"
+                        height="23"
+                        viewBox="0 0 19 23"
+                        fill="none"
+                      >
+                        <path
+                          d="M6.93279 1.54695C7.32331 1.15642 7.95648 1.15643 8.347 1.54695L13.7646 6.96453C14.1551 7.35505 14.1551 7.98821 13.7646 8.37874L8.347 13.7963C7.95647 14.1868 7.32331 14.1868 6.93279 13.7963L1.51521 8.37874C1.12469 7.98821 1.12469 7.35505 1.51521 6.96452L6.93279 1.54695Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M12.4623 13.6627C12.8529 13.2721 13.486 13.2721 13.8765 13.6627L17.3739 17.1601C17.7645 17.5506 17.7645 18.1838 17.3739 18.5743L13.8765 22.0717C13.486 22.4622 12.8529 22.4622 12.4623 22.0717L8.96492 18.5743C8.5744 18.1838 8.57439 17.5506 8.96492 17.1601L12.4623 13.6627Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <div className="cardfootertext">
+                      <p>
+                        " 49% Energy savings, equivalent to removing 218 cars from
+                        the road. "
+                      </p>
+                    </div>
+                  </div>
+
+
+          </motion.div>
+
+
+          {/* <motion.div
             className="sectioncard"
             style={{ position: "absolute", top: 320 }}
             variants={item}
@@ -628,10 +900,75 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
           {/* -------------------------------------------------- WASTE PRODUCTION --------------------------------------------------*/}
 
-          <motion.div
+          <motion.div 
+          className="sectioncard" 
+          variants={item}     
+          whileHover={{scale:1.05}}
+          style={{   top: 560, height:132 }}
+
+          onClick={handleCalloutClick}>
+
+                  <div className="cardheaderbg">
+                    <h3>WASTE PRODUCTION</h3>
+                  </div>
+
+                    <div className="cardbody" >
+                                <div className="cardtop" style={{height: 60, display: 'flex'}}>
+
+                                  <h3 style={{position: 'absolute', top: 6}}>803</h3>
+
+                                <div className="wasteh6" style={{color: '#fff'}}>
+                                         Tons 
+                                  </div>
+
+                                  <div className="wasteh6" style={{ top: 30, fontSize: "0.6rem"}}>
+
+                                         <div style={{
+                                          display: 'flex',
+                                          justifyContent: 'start',
+                                          position: 'absolute',
+                                          left: '6px',
+                                          top: '7px',
+                                          }}>
+                                          37%</div> 
+
+                                         <div className="arrowup" style={{right: 5, top:8}}>
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="11"
+                                            height="9"
+                                            viewBox="0 0 11 9"
+                                            fill="none"
+                                          >
+                                            <path
+                                              d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
+                                              fill="#41D3B9"
+                                            />
+                                          </svg>
+                                </div>
+                                  </div>
+
+
+                                </div>
+                                <div className="cardtop" style={{height: 60}}>
+                                  <h3 style={{position: 'absolute', top: 6}}>342</h3>
+                                  <h6 style={{position: 'absolute', top: -6}}>Liters/SQM</h6> 
+                                </div>
+                      </div> 
+
+                            
+
+ 
+
+          </motion.div>
+
+
+
+
+          {/* <motion.div
             className="sectioncard"
             style={{ position: "absolute", top: 510, height: 127 }}
             variants={item}
@@ -768,12 +1105,14 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
+
+
           {/* -------------------------------------------------- CARBON FOOTPRINT --------------------------------------------------*/}
 
           <motion.div
             className="sectioncard"
-            style={{ position: "absolute", top: 653, height: 190 }}
+            style={{ position: "absolute", top: 702, height: 208 }}
             variants={item}
           whileHover={{scale:1.05}}
 
@@ -781,14 +1120,16 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
             <div className="cardheaderbg">
               <h3>CARBON FOOTPRINT</h3>
             </div>
-            <div className="cardbody">
+            <div className="cardbody" style={{top: 5}}>
               <div className="cardgroup">
-                <div className="cardtop">
-                  <h3>17,013</h3>
-                  <h6>Tons</h6>{" "}
+                <div className="cardtop" style={{height: 60,  background:  'rgba(8, 87, 96, 0.90)'}}>
+                  <h3 style={{position: 'absolute', top: 6, 
+                 
+}}>17,013</h3>
+                  <h6 style={{position: 'absolute', top: -6}}>Tons</h6> 
                 </div>
 
-                <div className="cardbottom" style={{ height: 82 }}>
+                <div className="cardbottom" style={{ height: 67, background:'rgba(8, 90, 96, 0.2)' }}>
                   <div></div>
                   <div>
                     <h6> </h6>
@@ -799,7 +1140,7 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
 
               <div className="cardgroup">
                 <div className="carbonbars">
-                  <div className="cardbottom">
+                  <div className="cardbottom" >
                     <div></div>
                     <div style={{ position: "relative", left: -20 }}>
                       <h6>Energy </h6>
@@ -1150,6 +1491,8 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
               </div>
             </div>
           </motion.div>
+
+
         </section>
       </motion.div>
 
@@ -1213,7 +1556,7 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
 
           <motion.div
             className="sectioncard"
-            style={{ position: "absolute", top: 12, right: 12, height: 127 }}
+            style={{ position: "absolute", top: 12, right: 12, height: 0, width: 525 }}
             variants={item}
           >
 
@@ -1221,8 +1564,8 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
               <h3>CLEAN ENERGY GENERATION</h3>
             </div>
 
-            <div className="cardbody">
-              <div className="cardgroup">
+            <div className="cardbody" style={{ top: -3, left: 77}}>
+              <div className="cardgroup"  >
                 <div
                   className="cardtop"
                   style={{

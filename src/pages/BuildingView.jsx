@@ -128,7 +128,9 @@ const BuildingView = () => {
 
                     <div className='bvtop' >
 
-                            <motion.div className='bvsectioncard'variants={item}   >
+                      
+
+                            {/* <motion.div className='bvsectioncard'variants={item}   >
                                 <div className='bvcardheaderbg'><h3>ENERGY CONSUMPTION</h3></div>
                                 <div className='cardbody'>
                                     <div className='cardgroup'>
@@ -319,14 +321,15 @@ const BuildingView = () => {
 
                             <motion.div className='bvsectioncard' variants={item}   >
                                     <div className='bvcardheaderbg'><h3>WASTE PRODUCTION</h3></div>
-                                    <div className='cardbody'>
+                                      <div className='cardbody'>
                                         <div className='cardgroup'>
                                           <div className='cardtop'>
                                             <Statistic   value={798} formatter={formatter} 
                                               valueStyle={animatedValue} 
                                               />
 
-                                            <h6>Tons</h6> </div>
+                                            <h6>Tons</h6> 
+                                          </div>
 
                                           <div className='cardbottom'>  
                                             <div>
@@ -371,7 +374,7 @@ const BuildingView = () => {
                                             <div><h6>Diverted to landfill</h6></div>
                                           </div>
 
-                                        </div>
+                                      </div>
                                     </div>
 
                               </motion.div>
@@ -539,7 +542,7 @@ const BuildingView = () => {
                                         </div>
                                     </div>
 
-                              </motion.div>
+                              </motion.div> */}
 
 
 
