@@ -708,36 +708,11 @@ const BuildingFloorView = () => {
 
                                   <h3 style={{position: 'absolute', top: 6}}>803</h3>
 
-                                <div className="wasteh6" style={{color: '#fff'}}>
+                                <div className="wasteh6" style={{color: '#fff', height: 60}}>
                                          Tons 
                                   </div>
 
-                                  <div className="wasteh6" style={{ top: 30, fontSize: "0.6rem"}}>
-
-                                         <div style={{
-                                          display: 'flex',
-                                          justifyContent: 'start',
-                                          position: 'absolute',
-                                          left: '6px',
-                                          top: '7px',
-                                          }}>
-                                          37%</div> 
-
-                                         <div className="arrowup" style={{right: 5, top:8}}>
-                                          <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="11"
-                                            height="9"
-                                            viewBox="0 0 11 9"
-                                            fill="none"
-                                          >
-                                            <path
-                                              d="M6.55035 8.46387C6.16545 9.13053 5.2032 9.13053 4.8183 8.46387L0.853741 1.59705C0.468841 0.93038 0.949965 0.0970459 1.71977 0.0970459L9.64889 0.0970459C10.4187 0.0970459 10.8998 0.930379 10.5149 1.59705L6.55035 8.46387Z"
-                                              fill="#41D3B9"
-                                            />
-                                          </svg>
-                                </div>
-                                  </div>
+                                   
 
 
                                 </div>
@@ -1204,7 +1179,7 @@ const BuildingFloorView = () => {
 
                           < div className='bfvbottomright'  >
                           
-                                    <img src='../holo-kuwaitzain-floor.png'  alt='' className='holosiemensfloor'  /> 
+                                    <img src='../gf.png'  alt='' className='holosiemensfloor' style={{width:510}} /> 
                                 
                                     
                                     {/* <img src='holo-omantel.png' className='holosiemens'  />  */}
@@ -1214,15 +1189,15 @@ const BuildingFloorView = () => {
 
                                 <img src='../circleglow.png' className='circleglow'  /> 
                                       <div className='floorselect'>
-                                          <div className='floorbtnactive' style={{width: 80}}>Building</div>
+                                          <div className='floorbtn' style={{width: 80}}>Building</div>
                                           <div className='floorselectlabel'>Floor Select</div>
+                                          <div className='floorbtnactive'>GF</div>
                                           <div className='floorbtn'>1F</div>
                                           <div className='floorbtn'>2F</div>
                                           <div className='floorbtn'>3F</div>
                                           <div className='floorbtn'>4F</div>
                                           <div className='floorbtn'>5F</div>
-                                          <div className='floorbtn'>6F</div>
-                                          <div className='floorbtn'>7F</div>
+                                          <div className='floorbtn'>MF</div>
                                         </div>            
 
                           </div>
