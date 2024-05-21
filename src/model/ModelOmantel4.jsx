@@ -5,10 +5,9 @@ Command: npx gltfjsx@6.2.13 demo-diorama2.glb -T
 Files: demo-diorama2.glb [167.26MB] > demo-diorama2-transformed.glb [12.63MB] (92%)
 */
 
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
-import { Building2 } from './Building2'
-import { motion } from "framer-motion-3d";
+ import { useGLTF } from '@react-three/drei'
+ import { motion } from "framer-motion-3d";
+import { Building3 } from './Building3';
 
 export default function ModelOmantel4({ landx, landz, gesture, noHand }) {
   const { nodes, materials } = useGLTF('/demo-diorama2-transformed.glb')
@@ -23,12 +22,11 @@ export default function ModelOmantel4({ landx, landz, gesture, noHand }) {
       initial={{ rotateX: 0, scale: 0 }}
       animate={{
         scale: Math.max(0.8, noHand ? 0.8 : -landz /7  ),
-        rotateY: -landx,
-      }}
+        rotateY: -landx }}
       transition={{ duration: 1, ease: "easeOut" }}
       exit= {{ scale:0, transition:{duration: 0.5, ease:"easeInOut", delay:0.3} }}
     >
-    <Building2/>
+     <Building3 gesture={gesture}/>
 
     <group dispose={null}>
       <group position={[-23.652, 3.744, 179.988]} rotation={[0, -1.571, 0]} scale={22.084}>

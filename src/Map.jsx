@@ -13,9 +13,10 @@ import DemoModel from "./DemoModel";
 // import Siemen from "./Siemen";
 import { useControls } from "leva";
 import { Bloom, EffectComposer, ToneMapping } from "@react-three/postprocessing";
+import ModelOmantel4 from "./model/ModelOmantel4";
 
   
-function Map( { landx, landz, gesture, noHand }) {
+function Map( { landx, landz,  noHand , gesture}) {
   //debug
   // const { x } = useControls({
   //   x: { value: -264.6, min: -555, max: 555, step: 0.1 },
@@ -65,7 +66,7 @@ function Map( { landx, landz, gesture, noHand }) {
           fov={25}
         />
 
-        <Model  landx={landx} landz={landz} gesture={gesture} noHand={noHand}/>
+        <ModelOmantel4 landx={landx} landz={landz} gesture={gesture} noHand={noHand}/>
         {/* <DemoModel /> */}
  
         {/* <Siemen /> */}

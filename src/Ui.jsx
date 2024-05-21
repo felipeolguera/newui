@@ -954,8 +954,8 @@ const Energy = ({ enableCam, isGestureEnabled }) => {
 
                                 </div>
                                 <div className="cardtop" style={{height: 60}}>
-                                  <h3 style={{position: 'absolute', top: 6}}>342</h3>
-                                  <h6 style={{position: 'absolute', top: -6}}>Liters/SQM</h6> 
+                                  <h3 style={{position: 'absolute', top: 6}}>57%</h3>
+                                  <h6 style={{position: 'absolute', top: -20, right: 16, width: 60, textAlign: 'center'}}>Diverted from landfill</h6> 
                                 </div>
                       </div> 
 

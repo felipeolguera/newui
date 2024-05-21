@@ -205,11 +205,11 @@ const Home = () => {
 
   useEffect(() => {
     createGestureRecognizer();
-  }, []);
+   }, []);
 
-  // useEffect(() => {
-  //   console.log(  landx,   landz, gesture);
-  // }, []);
+  useEffect(() => {
+    console.log(  landx,   landz, gesture);
+  } );
 
 
   return (

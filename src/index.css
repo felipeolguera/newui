@@ -1,12 +1,12 @@
  
 @font-face {
   font-family: 'Inria';
-  src: local('Inria'), url(InriaSans-Bold.woff) format('woff');
+  src: local('Inria'), url(../InriaSans-Bold.woff) format('woff');
 
 }
 @font-face {
 font-family: 'Xolonium';
-src: local('Xolonium'), url(Xolonium-Regular.woff) format('woff');
+src: local('Xolonium'), url(../Xolonium-Regular.woff) format('woff');
 }
 
 
@@ -123,7 +123,7 @@ z-index: 11;
   position: absolute;
   left: 0;
   top: 0;
-   background-image: url(sectionbg.png);
+   background-image: url(../sectionbg.png);
    opacity: 0.1;
    background-repeat: no-repeat;
    z-index: 0;
@@ -180,7 +180,7 @@ z-index: 11;
 }
 
 .ztlogo{
-  background-image: url(zt-logo.png);
+  background-image: url(../zt-logo.png);
   width: 201px;
   height: 32px;
   position: relative;
@@ -193,7 +193,7 @@ z-index: 11;
 {
   width: 369px;
   height: 52px;
-  background-image: url(cardheader.png);
+  background-image: url(../cardheader.png);
   position: absolute;
     margin: 8px;
 }
@@ -202,7 +202,7 @@ z-index: 11;
 {
   width: 525px;
   height: 52px;
-  background-image: url(cardheaderL.png);
+  background-image: url(../cardheaderL.png);
   position: absolute;
   top: 0;
   right: 0;
@@ -686,6 +686,21 @@ z-index: 11;
     
    }
 
+   .bfvbottomright
+   {
+    position: relative;
+    top: -28%;
+    left: 820px;
+    /* background-color: #41D3B909; */
+    width: 739px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+     
+    }
+ 
+
    .holosiemens
    {
       z-index: 1;
@@ -762,7 +777,7 @@ z-index: 11;
   {
     width: 370px;
     height: 52px;
-    background-image: url(cardheader.png);
+    background-image: url(../cardheader.png);
     position: absolute;
     margin: 8px;
   }
@@ -1061,4 +1076,31 @@ gap: 20px;
   align-items: center;
   justify-content: center;
   transition: 0.5s;
+}
+
+.annotation{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+   height: 50px;
+  width: 350px;
+  border-radius: 4px;
+  border: 2px solid   rgba(86, 105, 111, 0.5) ;
+  background: linear-gradient(173deg, rgba(17, 42, 49, 0.9) 0%, rgba(20, 57, 68, 0.36) 100%);
+   backdrop-filter: blur(18px);
+  transition: 
+  border 0.3s , 
+  width 0.3s, 
+  height 0.3s,
+  display 0.3s ;
+  transition-timing-function: ease-out;
+}
+
+.annotation:hover{
+  border: 3px solid   rgba(195, 218, 225, 0.8) ;
+  width: 354px;
+  height: 60px;
+  background-color: #4abbc3;
+
+
 }

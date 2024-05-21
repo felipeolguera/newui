@@ -10,7 +10,7 @@ import { motion } from "framer-motion-3d";
 import { AlertOutlined } from "@ant-design/icons";
 import { Building } from './Building'
 
-export default function Model({ landx, landz, gesture, noHand }) {
+export default function Model({ landx, landz, gestures, noHand }) {
   const { nodes, materials } = useGLTF('/demo-transformed.glb')
   return (
     <motion.group
